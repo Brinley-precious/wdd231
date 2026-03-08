@@ -1,12 +1,11 @@
-
-   /* Mobile-first base styles || WDD 231 | Brinley Francis */
+/* Mobile-first base styles || WDD 231 | Brinley Francis */
 
 :root {
     --purple: #6b35a8;
     --purple-light: #ede0ff;
     --orange: #f47c20;
     --orange-dark: #d4640c;
-    --text: #1a1a1a;
+    --text: #000000;
     --text-light: #ffffff;
     --surface: #ffffff;
     --bg: #faf7ff;
@@ -94,7 +93,7 @@ header {
 .navigation ul li a {
     display: block;
     padding: 0.85rem 1.2rem;
-    color: var(--text-light);
+    color: var(--text);
     text-decoration: none;
     font-weight: 600;
     min-height: 44px;
@@ -104,10 +103,11 @@ header {
 
 .navigation ul li a:hover {
     background-color: var(--text);
+    color: var(--text-light);
 }
 
 .navigation ul li.current a {
-    background-color: var (--text-light);
+    font-weight: bold;
 }
 
 /* ── MAIN ── */
