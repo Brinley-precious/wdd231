@@ -3,11 +3,11 @@
 
 const courses = [
   { code: 'CSE 110', subject: 'CSE', credits: 2, completed: true },
-  { code: 'CSE 111', subject: 'CSE', credits: 2, completed: false },
-  { code: 'CSE 210', subject: 'CSE', credits: 2, completed: false },
+  { code: 'CSE 111', subject: 'CSE', credits: 2, completed: true },
+  { code: 'CSE 210', subject: 'CSE', credits: 2, completed: true },
   { code: 'WDD 130', subject: 'WDD', credits: 2, completed: true },
-  { code: 'WDD 131', subject: 'WDD', credits: 2, completed: false },
-  { code: 'WDD 231', subject: 'WDD', credits: 2, completed: false }
+  { code: 'WDD 131', subject: 'WDD', credits: 2, completed: true },
+  { code: 'WDD 231', subject: 'WDD', credits: 2, completed: false },
 ];
 
 const container = document.querySelector('#courses');

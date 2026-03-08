@@ -1,256 +1,254 @@
-/* =============================================
-   small.css - Mobile-first base styles
-   WDD 231 | Brinley Francis
-   ============================================= */
+
+   /* Mobile-first base styles || WDD 231 | Brinley Francis */
 
 :root {
-  --purple:       #6b35a8;
-  --purple-light: #ede0ff;
-  --orange:       #f47c20;
-  --orange-dark:  #d4640c;
-  --text:         #1a1a1a;
-  --text-light:   #ffffff;
-  --surface:      #ffffff;
-  --bg:           #faf7ff;
+    --purple: #6b35a8;
+    --purple-light: #ede0ff;
+    --orange: #f47c20;
+    --orange-dark: #d4640c;
+    --text: #1a1a1a;
+    --text-light: #ffffff;
+    --surface: #ffffff;
+    --bg: #faf7ff;
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
-  background-color: var(--bg);
-  color: var(--text);
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0;
-  padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 /* ── HEADER - purple ── */
 header {
-  display: grid;
-  grid-template-columns: 44px auto 44px;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.75rem 1rem;
-  background-color: var(--purple);
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--purple);
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
-  background-color: var(--orange);
-  color: var(--text-light);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.9rem;
-  border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: var(--orange);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 50%;
 }
 
 .site-name {
-  color: var(--text-light);
-  font-weight: 600;
-  font-size: 1.05rem;
+    color: var(--text-light);
+    font-weight: 600;
+    font-size: 1.05rem;
 }
 
 /* ── HAMBURGER ── */
 .hamburger {
-  background: none;
-  border: none;
-  color: var(--text-light);
-  cursor: pointer;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .hamburger::before {
-  content: "\2630";
-  font-size: 1.4rem;
+    content: "\2630";
+    font-size: 1.4rem;
 }
 
 .hamburger.show::before {
-  content: "\00D7";
-  font-size: 1.8rem;
+    content: "\00D7";
+    font-size: 1.8rem;
 }
 
 /* ── NAV - orange ── */
 .navigation {
-  display: none;
-  background-color: var(--orange);
+    display: none;
+    background-color: var(--orange);
 }
 
 .navigation.show {
-  display: block;
+    display: block;
 }
 
 .navigation ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .navigation ul li a {
-  display: block;
-  padding: 0.85rem 1.2rem;
-  color: var(--text-light);
-  text-decoration: none;
-  font-weight: 600;
-  min-height: 44px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  transition: background-color 0.2s;
+    display: block;
+    padding: 0.85rem 1.2rem;
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: 600;
+    min-height: 44px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    transition: background-color 0.2s;
 }
 
 .navigation ul li a:hover {
-  background-color: var(--text);
+    background-color: var(--text);
 }
 
 .navigation ul li.current a {
-  background-color: var (--text-light); 
+    background-color: var (--text-light);
 }
 
 /* ── MAIN ── */
 main {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 
 main h1 {
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: var(--text);
-  margin: 0.4rem 0;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0.4rem 0;
 }
 
 /* ── SECTIONS ── */
 section {
-  background-color: var(--surface);
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
+    background-color: var(--surface);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.07);
 }
 
 section h2 {
-  background-color: var(--purple);
-  color: var(--text-light);
-  font-size: 1.05rem;
-  font-weight: 600;
-  padding: 0.7rem 1rem;
-  margin: 0;
+    background-color: var(--purple);
+    color: var(--text-light);
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 0.7rem 1rem;
+    margin: 0;
 }
 
 .about-section p {
-  padding: 1rem;
-  margin: 0;
+    padding: 1rem;
+    margin: 0;
 }
 
 .photo-section img {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  object-fit: cover;
-  margin: 1rem auto;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    margin: 1rem auto;
 }
 
 /* ── COURSES ── */
 .buttons {
-  display: flex;
-  gap: 0.5rem;
-  padding: 1rem 1rem 0.5rem;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 1rem 0.5rem;
+    flex-wrap: wrap;
 }
 
 .buttons button {
-  padding: 0.5rem 1.2rem;
-  min-height: 44px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--purple);
-  color: var(--text-light);
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 600;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background-color 0.2s;
+    padding: 0.5rem 1.2rem;
+    min-height: 44px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--purple);
+    color: var(--text-light);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
 .buttons button:hover {
-  background-color: var(--orange);
+    background-color: var(--orange);
 }
 
 #courses {
-  display: grid;
-  gap: 0.5rem;
-  padding: 0.8rem 1rem;
+    display: grid;
+    gap: 0.5rem;
+    padding: 0.8rem 1rem;
 }
 
 .course {
-  padding: 0.65rem 1rem;
-  border-radius: 5px;
-  font-weight: 500;
-  font-size: 0.9rem;
-  background-color: var(--purple-light);
-  border-left: 4px solid #cccccc;
+    padding: 0.65rem 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    background-color: var(--purple-light);
+    border-left: 4px solid #cccccc;
 }
 
 .course.completed {
-  background-color: var(--purple-light);
-  border-left-color: var(--purple);
-  font-weight: 600;
+    background-color: var(--purple-light);
+    border-left-color: var(--purple);
+    font-weight: 600;
 }
 
 #credits {
-  padding: 0.5rem 1rem 1rem;
-  font-size: 0.9rem;
-  color: var(--text);
-  margin: 0;
+    padding: 0.5rem 1rem 1rem;
+    font-size: 0.9rem;
+    color: var(--text);
+    margin: 0;
 }
 
 /* ── FOOTER - purple ── */
 footer {
-  background-color: var(--purple);
-  color: var(--text-light);
-  text-align: center;
-  padding: 1.8rem 1rem;
-  margin-top: 1rem;
+    background-color: var(--purple);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1.8rem 1rem;
+    margin-top: 1rem;
 }
 
 .social {
-  display: flex;
-  justify-content: center;
-  column-gap: 1.5rem;
-  margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .social a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 44px;
-  min-height: 44px;
-  text-decoration: none;
-  transition: transform 0.2s, opacity 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    text-decoration: none;
+    transition: transform 0.2s, opacity 0.2s;
 }
 
 .social a:hover {
-  transform: translateY(-3px);
-  opacity: 0.8;
+    transform: translateY(-3px);
+    opacity: 0.8;
 }
 
 .social img {
-  width: 32px;
-  height: 32px;
-  filter: brightness(0) invert(1);
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
 }
 
 footer p {
-  margin: 0.3rem 0;
-  font-size: 0.9rem;
-  opacity: 0.9;
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
 }
