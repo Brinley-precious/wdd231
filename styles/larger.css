@@ -1,0 +1,77 @@
+/* =============================================
+   larger.css - Larger screen styles
+   WDD 231 | Brinley Francis
+   ============================================= */
+
+@media (min-width: 700px) {
+
+  /* Hide hamburger on large screens */
+  .hamburger {
+    display: none;
+  }
+
+  /* Nav always visible, horizontal */
+  .navigation {
+    display: block;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation ul li a {
+    border-bottom: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 0.85rem 1.4rem;
+  }
+
+  /* Main 2-column grid */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+  }
+
+  /* H1 spans full width */
+  main h1 {
+    grid-column: 1 / -1;
+  }
+
+  /* About Me - left column */
+  .about-section {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  /* Student Photo - right column */
+  .photo-section {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  /* Courses - full width */
+  .courses-section {
+    grid-column: 1 / -1;
+  }
+
+  /* Photo fills container */
+  .photo-section img {
+    max-width: 100%;
+    width: calc(100% - 2rem);
+    margin: 1rem;
+  }
+
+  /* Courses 3 columns */
+  #courses {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}

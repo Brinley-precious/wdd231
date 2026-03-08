@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brinley Francis | Course Home Page</title>
+  <meta name="description" content="Course Home Page for Brinley Francis – WDD 231 Web Frontend Development">
+  <meta name="author" content="Brinley Francis">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo">BF</div>
+    <span class="site-name">Brinley Francis</span>
+    <button id="nav-button" class="hamburger" aria-label="navigation menu"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li class="current"><a href="index.html">Home</a></li>
+      <li><a href="#">Chamber Project</a></li>
+      <li><a href="#">Final Project</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="about-section">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Brinley Francis from Nigeria. I am passionate about creativity, technology, and helping
+        others transition into the digital world. I enjoy learning web development, connecting with people,
+        and building skills that create new opportunities.
+      </p>
+    </section>
+
+    <section class="photo-section">
+      <h2>Student Photo</h2>
+      <img src="images/profile-image.webp" alt="Portrait of Brinley Francis" width="300" height="300">
+    </section>
+
+    <section class="courses-section">
+      <h2>Web Certificate Courses</h2>
+      <div class="buttons">
+        <button id="all">All</button>
+        <button id="cse">CSE</button>
+        <button id="wdd">WDD</button>
+      </div>
+      <div id="courses"></div>
+      <p id="credits"></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/brinley-precious" aria-label="GitHub profile">
+        <img src="images/github-icon.svg" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/brinley-francis" aria-label="LinkedIn profile">
+        <img src="images/linkedin-icon.svg" alt="LinkedIn">
+      </a>
+      <a href="https://x.com/brinleypresh" aria-label="Twitter profile">
+        <img src="images/twitter-icon.svg" alt="Twitter">
+      </a>
+    </div>
+    <p>&#169; <span id="currentyear"></span> &#127800; Brinley Francis &#127800; &bull; Lagos, Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+
+</body>
+</html>
