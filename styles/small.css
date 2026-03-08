@@ -29,6 +29,7 @@ header {
     gap: 0.6rem;
     padding: 0.75rem 1rem;
     background-color: var(--purple);
+    color: var(--text-light);
 }
 
 .logo {
