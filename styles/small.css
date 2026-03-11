@@ -108,7 +108,15 @@ header {
 }
 
 .navigation ul li.current a {
-    font-weight: bold;
+    font-weight: 700;
+    background-color: var(--orange-dark);
+    color: var(--text);
+}
+
+.navigation ul li.current a:hover {
+    background-color: var(--orange-dark);
+    color: var(--text);
+    opacity: 0.9;
 }
 
 /* ── MAIN ── */

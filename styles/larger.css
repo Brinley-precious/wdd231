@@ -26,6 +26,18 @@
     padding: 0.85rem 1.4rem;
   }
 
+  .navigation ul li .current a {
+    background-color: var(--orange-dark);
+    color: var(--text);
+    font-weight: 700;
+  }
+
+  .navigation ul li.current a:hover {
+    background-color: var(--orange-dark);
+    color: var(--text);
+    opacity: 0.9;
+  }
+
   /* Main 2-column grid */
   main {
     display: grid;
