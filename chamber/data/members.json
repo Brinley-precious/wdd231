@@ -1,0 +1,74 @@
+{
+  "members": [
+    {
+      "name": "Dangote Industries Limited",
+      "address": "Leadway Marble House, 1 Alfred Rewane Road, Falomo, Ikoyi, Lagos",
+      "phone": "+234 1 448 0815",
+      "website": "https://www.dangote.com",
+      "image": "dangote-logo.webp",
+      "membershipLevel": 3,
+      "industry": "Manufacturing & Conglomerate",
+      "description": "One of Africa's largest diversified business conglomerates."
+    },
+    {
+      "name": "Paystack",
+      "address": "126 Joel Ogunnaike Street, Ikeja GRA, Ikeja, Lagos",
+      "phone": "+234 201 631 6160",
+      "website": "https://www.paystack.com",
+      "image": "paystack-logo.webp",
+      "membershipLevel": 3,
+      "industry": "Financial Technology",
+      "description": "Modern online and offline payments platform for Africa."
+    },
+    {
+      "name": "Nestlé Nigeria PLC",
+      "address": "22-24 Industrial Avenue, Ilupeju, Lagos",
+      "phone": "+234 1 279 0707",
+      "website": "https://www.nestle-cwa.com",
+      "image": "nestle-logo.webp",
+      "membershipLevel": 3,
+      "industry": "Food & Beverage",
+      "description": "One of the largest food and beverage companies in Africa."
+    },
+    {
+      "name": "Boomplay",
+      "address": "18F Isaac John Street, Ikeja GRA, Ikeja, Lagos",
+      "phone": "+234 1 888 0000",
+      "website": "https://www.boomplay.com",
+      "image": "boomplay-logo.webp",
+      "membershipLevel": 2,
+      "industry": "Entertainment & Music Streaming",
+      "description": "Africa's largest and fastest growing music streaming platform."
+    },
+    {
+      "name": "Moove Africa",
+      "address": "3 Adeyemi Lawson Street, Ikoyi, Lagos",
+      "phone": "+234 1 700 0000",
+      "website": "https://www.moove.io",
+      "image": "moove-logo.webp",
+      "membershipLevel": 2,
+      "industry": "Mobility & Fintech",
+      "description": "World's first mobility fintech, democratising vehicle ownership."
+    },
+    {
+      "name": "Sujimoto Construction",
+      "address": "14B Milverton Road, Off Alexander Avenue, Ikoyi, Lagos",
+      "phone": "+234 809 124 3555",
+      "website": "https://www.sujimotonig.com",
+      "image": "sujimoto-logo.webp",
+      "membershipLevel": 2,
+      "industry": "Real Estate & Construction",
+      "description": "Nigeria's leading luxury real estate development company."
+    },
+    {
+      "name": "Farmcrowdy",
+      "address": "2 Opeyemisi Bamidele Street, Off Freedom Way, Ikate, Lekki, Lagos",
+      "phone": "+234 706 796 3016",
+      "website": "https://www.farmcrowdy.com",
+      "image": "farmcrowdy-logo.webp",
+      "membershipLevel": 1,
+      "industry": "Agriculture Technology",
+      "description": "Nigeria's first digital agriculture platform empowering rural farmers."
+    }
+  ]
+}

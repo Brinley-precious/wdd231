@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Directory | Lagos Chamber of Commerce</title>
+  <meta name="description" content="Browse the official member directory of the Lagos Chamber of Commerce. Discover local businesses across industries in Lagos, Nigeria.">
+  <meta name="author" content="Brinley Francis">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Member Directory | Lagos Chamber of Commerce">
+  <meta property="og:description" content="Browse the official member directory of the Lagos Chamber of Commerce. Discover local businesses across industries in Lagos, Nigeria.">
+  <meta property="og:image" content="https://brinley-precious.github.io/wdd231/chamber/images/chamber-og.webp">
+  <meta property="og:url" content="https://brinley-precious.github.io/wdd231/chamber/directory.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Normalize CSS first -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <!-- Chamber CSS -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- Scripts -->
+  <script src="scripts/members.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-brand">
+      <div class="logo">LCC</div>
+      <div class="brand-text">
+        <span class="brand-name">Lagos Chamber of Commerce</span>
+        <span class="brand-tagline">Connecting Business. Building Lagos.</span>
+      </div>
+    </div>
+    <button id="nav-button" class="hamburger" aria-label="navigation menu"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="current"><a href="directory.html">Directory</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="directory-header">
+      <h1>Member Directory</h1>
+      <p>Discover and connect with member businesses of the Lagos Chamber of Commerce.</p>
+    </section>
+
+    <section class="directory-controls">
+      <div class="view-toggle">
+        <button id="grid-view" class="view-btn active" aria-label="Grid view">
+          <span class="icon-grid">&#9711;&#9711;&#9711;</span>
+          Grid
+        </button>
+        <button id="list-view" class="view-btn" aria-label="List view">
+          <span class="icon-list">&#9776;</span>
+          List
+        </button>
+      </div>
+      <p class="member-count">Showing <span id="member-count">0</span> members</p>
+    </section>
+
+    <div id="members-container" class="members-grid"></div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h3>Lagos Chamber of Commerce</h3>
+        <p>Leadway Marble House, 1 Alfred Rewane Road,<br>Ikoyi, Lagos, Nigeria</p>
+        <p>Email: info@lagoschamber.org</p>
+        <p>Phone: +234 1 269 2190</p>
+      </div>
+      <div class="footer-nav">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-dev">
+        <p>&copy; <span id="currentyear"></span> Lagos Chamber of Commerce</p>
+        <p>Brinley Francis &bull; WDD 231</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

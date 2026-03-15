@@ -1,0 +1,23 @@
+{
+  "familyName": "Francis",
+  "moveInDate": "2024-01-15",
+  "numberOfMembers": 3,
+  "visitedByBishopric": true,
+  "members": [
+    {
+      "name": "Brinley Francis",
+      "gender": "Female",
+      "birthdate": "1990-05-20"
+    },
+    {
+      "name": "John Francis",
+      "gender": "Male",
+      "birthdate": "1988-11-10"
+    },
+    {
+      "name": "Joy Francis",
+      "gender": "Female",
+      "birthdate": "2015-03-25"
+    }
+  ]
+}

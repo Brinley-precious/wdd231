@@ -1,0 +1,117 @@
+/* === larger.css - Larger screen styles
+   Lagos Chamber of Commerce | WDD 231
+   Brinley Francis === */
+
+@media (min-width: 700px) {
+
+  /* ── Header full width ── */
+  header {
+    grid-template-columns: auto 44px;
+    padding: 0.85rem 2rem;
+  }
+
+  .brand-name {
+    font-size: 1.1rem;
+  }
+
+  .brand-tagline {
+    font-size: 0.75rem;
+  }
+
+  /* ── Hide hamburger, show nav ── */
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 2rem;
+  }
+
+  .navigation ul li a {
+    border-bottom: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.85rem 1.4rem;
+    font-size: 0.85rem;
+  }
+
+  /* ── Main ── */
+  main {
+    padding: 2rem;
+  }
+
+  /* ── Directory header ── */
+  .directory-header {
+    padding: 2.5rem 2rem;
+  }
+
+  .directory-header h1 {
+    font-size: 2.2rem;
+  }
+
+  /* ── Members grid 2 columns ── */
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* ── List view full row ── */
+  .members-list {
+    grid-template-columns: 1fr;
+  }
+
+  .members-list .member-card {
+    grid-template-columns: 120px 1fr;
+  }
+
+  .members-list .card-img-wrap {
+    height: 100px;
+    padding: 1rem;
+  }
+
+  .members-list .card-img-wrap img {
+    max-width: 90px;
+    max-height: 70px;
+  }
+
+  /* ── Footer ── */
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .footer-dev {
+    border-top: none;
+    padding-top: 0;
+    text-align: right;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  header {
+    padding: 0.85rem 3rem;
+  }
+
+  .navigation ul {
+    padding: 0 3rem;
+  }
+
+  main {
+    padding: 2rem 3rem;
+  }
+
+  /* ── Members grid 3 columns ── */
+  .members-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
