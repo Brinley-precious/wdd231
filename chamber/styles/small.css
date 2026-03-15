@@ -5,9 +5,9 @@
 :root {
   --primary:      #0a2342;
   --secondary:    #b8860b;
-  --gold-dark:    #a07830;
   --bg:           #f5f7fa;
   --text:         #0a0a0a;
+  --border:       #e2e8f0;
   --accent-1:     #ffffff;
   --accent-2:     #1a3a5c;
   --badge-gold:   #b8860b;
@@ -37,6 +37,7 @@ header {
   gap: 0.5rem;
   padding: 0.75rem 1rem;
   background-color: var(--primary);
+  color: var(--accent-1);
   border-bottom: 3px solid var(--secondary);
 }
  
@@ -50,7 +51,7 @@ header {
   width: 44px;
   height: 44px;
   background-color: var(--secondary);
-  color: var(--accent-1);
+  color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,7 +160,7 @@ main {
  
 /* ── DIRECTORY HEADER ── */
 .directory-header {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--accent-2) 100%);
+  background-color: var(--primary);
   color: var(--accent-1);
   padding: 2rem 1.5rem;
   border-radius: 8px;
@@ -239,7 +240,7 @@ main {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--border);
   transition: transform 0.2s, box-shadow 0.2s;
 }
  
@@ -254,7 +255,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid var(--border);
   height: 140px;
 }
  
@@ -312,7 +313,7 @@ main {
   justify-content: space-between;
   margin-top: 1rem;
   padding-top: 0.75rem;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid var(--border);
 }
  
 .card-website {
@@ -397,8 +398,8 @@ footer {
   gap: 1.5rem;
 }
  
-.footer-info h3,
-.footer-nav h3 {
+.footer-info h2,
+.footer-nav h2 {
   color: var(--secondary);
   font-size: 0.9rem;
   font-weight: 700;
