@@ -1,10 +1,12 @@
-/* === larger.css - Larger screen styles
+/* =============================================
+   larger.css - Larger screen styles
    Lagos Chamber of Commerce | WDD 231
-   Brinley Francis === */
+   Brinley Francis
+   ============================================= */
 
 @media (min-width: 700px) {
 
-  /* ── Header full width ── */
+  /* ── Header ── */
   header {
     grid-template-columns: auto 44px;
     padding: 0.85rem 2rem;
@@ -41,27 +43,78 @@
     font-size: 0.85rem;
   }
 
-  /* ── Main ── */
-  main {
+  /* ── Hero ── */
+  .hero img {
+    height: 500px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  /* ── Home Grid - 2 column layout ── */
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
     padding: 2rem;
+  }
+
+  /* Events - left column, row 1 */
+  .events-section {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  /* Weather - right column, row 1 */
+  .weather-section {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /* Spotlights - full width, row 2 */
+  .spotlights-section {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  /* Spotlights 3 columns on desktop */
+  #spotlights-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .spotlight-card {
+    flex: 1;
   }
 
   /* ── Directory header ── */
   .directory-header {
     padding: 2.5rem 2rem;
+    margin: 2rem 2rem 0;
   }
 
   .directory-header h1 {
     font-size: 2.2rem;
   }
 
+  /* ── Directory controls ── */
+  .directory-controls {
+    margin: 1.5rem 2rem;
+  }
+
   /* ── Members grid 2 columns ── */
   .members-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    padding: 0 2rem 2rem;
   }
 
-  /* ── List view full row ── */
+  /* ── List view ── */
   .members-list {
     grid-template-columns: 1fr;
   }
@@ -105,13 +158,22 @@
     padding: 0 3rem;
   }
 
-  main {
-    padding: 2rem 3rem;
-  }
-
   /* ── Members grid 3 columns ── */
   .members-grid {
     grid-template-columns: repeat(3, 1fr);
+    padding: 0 3rem 3rem;
+  }
+
+  .directory-header {
+    margin: 2rem 3rem 0;
+  }
+
+  .directory-controls {
+    margin: 1.5rem 3rem;
+  }
+
+  .home-grid {
+    padding: 2rem 3rem;
   }
 
 }
