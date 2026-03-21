@@ -166,6 +166,7 @@ main {
   width: 100%;
   overflow: hidden;
   background-color: var(--primary);
+  color : var(--accent-1);
 }
 
 .hero img {
