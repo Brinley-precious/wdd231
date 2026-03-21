@@ -8,7 +8,6 @@
 
   /* ── Header ── */
   header {
-    grid-template-columns: auto 44px;
     padding: 0.85rem 2rem;
   }
 
@@ -20,7 +19,7 @@
     font-size: 0.75rem;
   }
 
-  /* ── Hide hamburger, show nav ── */
+  /* ── Navigation ── */
   .hamburger {
     display: none;
   }
@@ -31,8 +30,6 @@
 
   .navigation ul {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
     padding: 0 2rem;
   }
 
@@ -56,7 +53,7 @@
     font-size: 1.1rem;
   }
 
-  /* ── Home Grid - 2 column layout ── */
+  /* ── Home Grid ── */
   .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -64,19 +61,12 @@
     padding: 2rem;
   }
 
-  .events-section {
-    grid-column: 1;
-    grid-row: 1;
-  }
-
   .weather-section {
     grid-column: 2;
-    grid-row: 1;
   }
 
   .spotlights-section {
     grid-column: 1 / -1;
-    grid-row: 2;
   }
 
   #spotlights-container {
@@ -106,14 +96,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     padding: 0 2rem 2rem;
-  }
-
-  .members-list {
-    grid-template-columns: 1fr;
-  }
-
-  .members-list .member-card {
-    grid-template-columns: 120px 1fr;
   }
 
   .members-list .card-img-wrap {
@@ -151,9 +133,8 @@
     padding: 0 3rem;
   }
 
-  .members-grid {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 3rem 3rem;
+  .home-grid {
+    padding: 2rem 3rem;
   }
 
   .directory-header {
@@ -164,8 +145,9 @@
     margin: 1.5rem 3rem;
   }
 
-  .home-grid {
-    padding: 2rem 3rem;
+  .members-grid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 3rem 3rem;
   }
 
 }

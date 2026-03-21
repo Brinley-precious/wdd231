@@ -12,11 +12,8 @@
   --accent-1:     #ffffff;
   --accent-2:     #1a3a5c;
   --border:       #e2e8f0;
-  --badge-gold:   #b8860b;
   --badge-silver: #4a5568;
   --badge-member: #2d6a4f;
-  --shadow-sm:    0 2px 8px rgba(0, 0, 0, 0.08);
-  --shadow-lg:    0 6px 20px rgba(0, 0, 0, 0.12);
   --radius:       8px;
 }
 
@@ -168,6 +165,7 @@ main {
   position: relative;
   width: 100%;
   overflow: hidden;
+  background-color: var(--primary);
 }
 
 .hero img {
@@ -215,7 +213,7 @@ main {
   background-color: var(--secondary);
   color: var(--primary);
   padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+  border-radius: var(--radius);
   text-decoration: none;
   font-weight: 700;
   font-size: 0.9rem;
@@ -243,7 +241,7 @@ main {
   background-color: var(--accent-1);
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .events-section h2,
@@ -271,7 +269,7 @@ main {
   border-left: 4px solid var(--secondary);
   padding: 0.75rem 1rem;
   background-color: var(--bg);
-  border-radius: 0 6px 6px 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
 }
 
 .event-card h3 {
@@ -353,7 +351,7 @@ main {
 .forecast-day {
   text-align: center;
   background-color: var(--bg);
-  border-radius: 6px;
+  border-radius: var(--radius);
   padding: 0.5rem;
 }
 
@@ -486,7 +484,7 @@ main {
   padding: 0.5rem 1rem;
   min-height: 44px;
   border: 2px solid var(--primary);
-  border-radius: 6px;
+  border-radius: var(--radius);
   background-color: var(--accent-1);
   color: var(--primary);
   font-family: 'Montserrat', sans-serif;
@@ -522,14 +520,14 @@ main {
   background-color: var(--accent-1);
   border-radius: var(--radius);
   overflow: hidden;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border: 1px solid var(--border);
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .member-card:hover {
   transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
 .card-img-wrap {
@@ -623,7 +621,7 @@ main {
 }
 
 .badge-gold {
-  background-color: var(--badge-gold);
+  background-color: var(--secondary);
 }
 
 .badge-silver {
@@ -697,7 +695,6 @@ footer {
   font-style: italic;
   color: var(--secondary);
   margin: 0 0 0.5rem;
-  opacity: 0.9;
 }
 
 .footer-info p {
