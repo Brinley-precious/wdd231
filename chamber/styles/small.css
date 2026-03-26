@@ -623,6 +623,7 @@ main {
 
 .badge-gold {
   background-color: var(--secondary);
+  color: var(--accent-1);
 }
 
 .badge-silver {
@@ -683,7 +684,7 @@ footer {
 
 .footer-info h2,
 .footer-nav h2 {
-  color: var(--accent-1);
+  color: var(--secondary);
   font-size: 0.9rem;
   font-weight: 700;
   margin: 0 0 0.75rem;
@@ -694,7 +695,7 @@ footer {
 .footer-motto {
   font-size: 0.85rem;
   font-style: italic;
-  color: var(--accent-1);
+  color: var(--secondary);
   margin: 0 0 0.5rem;
 }
 
