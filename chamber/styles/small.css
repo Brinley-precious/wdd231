@@ -623,7 +623,7 @@ main {
 
 .badge-gold {
   background-color: var(--secondary);
-  color: var(--accent-1);                                                   
+  color: var(--primary);                                             
 }
 
 .badge-silver {
