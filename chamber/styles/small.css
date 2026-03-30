@@ -767,7 +767,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: var(--accent-2);
+  background-color: var(--primary);
 }
 
 form label {
@@ -809,7 +809,7 @@ form textarea {
 }
 
 .required {
-  color: var(--secondary);
+  color: var(--accent-1);
   font-weight: 700;
 }
  
