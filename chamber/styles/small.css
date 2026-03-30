@@ -809,8 +809,12 @@ form textarea {
 }
 
 .required {
-  color: #e53e3e;
+  color: var(--secondary);
   font-weight: 700;
+}
+ 
+.membership-fieldset .required {
+  color: var(--primary);
 }
 
 .membership-fieldset {
@@ -1007,13 +1011,13 @@ dialog h2 {
   position: absolute;
   top: 0.75rem;
   right: 0.75rem;
-  background: none;
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: var(--accent-1);
+  border: var(--border);
   border-radius: 4px;
   padding: 0.2rem 0.5rem;
   cursor: pointer;
   font-size: 0.75rem;
-  color: var(--accent-1);
+  color: var(--text);
   font-weight: 600;
   transition: background-color 0.2s;
 }
