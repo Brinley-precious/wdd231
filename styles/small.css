@@ -261,3 +261,64 @@ footer p {
     font-size: 0.9rem;
     opacity: 0.9;
 }
+
+/* ── MODAL DIALOG ── */
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: var(--surface);
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+dialog h2 {
+    background-color: var(--purple);
+    color: var(--text-light);
+    font-size: 1.05rem;
+    font-weight: 600;
+    padding: 0.7rem 1rem;
+    margin: 0 0 0.5rem;
+    border-radius: 4px;
+}
+
+dialog h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--purple);
+    margin: 0 0 1rem;
+}
+
+dialog p {
+    font-size: 0.9rem;
+    color: var(--text);
+    margin: 0.4rem 0;
+    line-height: 1.6;
+}
+
+dialog strong {
+    color: var(--purple);
+}
+
+dialog button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+dialog button:hover {
+    background-color: var(--purple-light);
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}

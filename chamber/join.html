@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join | Lagos Chamber of Commerce</title>
+  <meta name="description" content="Apply to join the Lagos Chamber of Commerce. Choose a membership level and start growing your business with our network today.">
+  <meta name="author" content="Brinley Francis">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Join the Lagos Chamber of Commerce">
+  <meta property="og:description" content="Apply to join the Lagos Chamber of Commerce. Choose a membership level and start growing your business with our network today.">
+  <meta property="og:image" content="https://brinley-precious.github.io/wdd231/chamber/images/chamber-og.webp">
+  <meta property="og:url" content="https://brinley-precious.github.io/wdd231/chamber/join.html">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Normalize first -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <!-- Chamber CSS -->
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <!-- Scripts -->
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-brand">
+      <div class="logo">LCC</div>
+      <div class="brand-text">
+        <span class="brand-name">Lagos Chamber of Commerce</span>
+        <span class="brand-tagline">Where Lagos Business Comes Alive.</span>
+      </div>
+    </div>
+    <button id="nav-button" class="hamburger" aria-label="navigation menu"></button>
+  </header>
+
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li class="current"><a href="join.html">Join</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="directory-header">
+      <h1>Become a Member</h1>
+      <p>Join hundreds of Lagos businesses already growing through the power of the chamber network.</p>
+    </section>
+
+    <div class="join-grid">
+
+      <!-- Membership Application Form -->
+      <section class="join-form-section">
+        <h2>Membership Application Form</h2>
+        <form method="get" action="thankyou.html" id="membership-form">
+
+          <label for="first-name">
+            First Name <span class="required">*</span>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              title="Enter your first name"
+              autocomplete="given-name"
+              required>
+          </label>
+
+          <label for="last-name">
+            Last Name <span class="required">*</span>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              title="Enter your last name"
+              autocomplete="family-name"
+              required>
+          </label>
+
+          <label for="org-title">
+            Organizational Title
+            <input
+              type="text"
+              id="org-title"
+              name="org-title"
+              title="Enter your title within your organization (letters, hyphens, spaces, minimum 7 characters)"
+              autocomplete="organization-title"
+              pattern="[A-Za-z\- ]{7,}"
+              placeholder="e.g. Managing Director">
+          </label>
+
+          <label for="email">
+            Email Address <span class="required">*</span>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              title="Enter a valid email address"
+              autocomplete="email"
+              placeholder="john89@gmail.com"
+              required>
+          </label>
+
+          <label for="phone">
+            Mobile Phone <span class="required">*</span>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              title="Enter your mobile phone number"
+              autocomplete="tel"
+              placeholder="987-555-1234"
+              required>
+          </label>
+
+          <label for="organization">
+            Business / Organization Name <span class="required">*</span>
+            <input
+              type="text"
+              id="organization"
+              name="organization"
+              title="Enter your business or organization name"
+              autocomplete="organization"
+              required>
+          </label>
+
+          <fieldset class="membership-fieldset">
+            <legend>Membership Level <span class="required">*</span></legend>
+            <label class="radio-label">
+              <input type="radio" name="membership" value="np" required>
+              NP Membership — Non-Profit (No Fee)
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="membership" value="bronze">
+              Bronze Membership
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="membership" value="silver">
+              Silver Membership
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="membership" value="gold">
+              Gold Membership
+            </label>
+          </fieldset>
+
+          <label for="description">
+            Business Description
+            <textarea
+              id="description"
+              name="description"
+              title="Briefly describe your business or organization"
+              rows="4"
+              placeholder="Tell us about your business..."></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp">
+
+          <input type="submit" value="Submit Application">
+
+        </form>
+      </section>
+
+      <!-- Membership Level Cards -->
+      <section class="levels-section">
+        <h2>Membership Levels</h2>
+        <div class="levels-grid">
+
+          <div class="level-card">
+            <h3>Non Profit Membership Level</h3>
+            <button class="learn-more-btn" data-modal="modal-np">Learn More</button>
+          </div>
+
+          <div class="level-card">
+            <h3>Bronze Membership Level</h3>
+            <button class="learn-more-btn" data-modal="modal-bronze">Learn More</button>
+          </div>
+
+          <div class="level-card">
+            <h3>Silver Membership Level</h3>
+            <button class="learn-more-btn" data-modal="modal-silver">Learn More</button>
+          </div>
+
+          <div class="level-card">
+            <h3>Gold Membership Level</h3>
+            <button class="learn-more-btn" data-modal="modal-gold">Learn More</button>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Membership Modals -->
+    <dialog id="modal-np">
+      <button class="close-modal" aria-label="Close modal">Close ✕</button>
+      <h2>NP Membership</h2>
+      <p class="modal-fee">No Fee</p>
+      <ul class="modal-benefits">
+        <li>Listing in the online business directory</li>
+        <li>Access to chamber networking events</li>
+        <li>Monthly chamber newsletter</li>
+        <li>Access to member-only resources and guides</li>
+        <li>Eligibility to attend annual business conference</li>
+      </ul>
+    </dialog>
+
+    <dialog id="modal-bronze">
+      <button class="close-modal" aria-label="Close modal">Close ✕</button>
+      <h2>Bronze Membership</h2>
+      <p class="modal-fee">₦50,000 / year</p>
+      <ul class="modal-benefits">
+        <li>All Non-Profit benefits included</li>
+        <li>Featured listing in the business directory</li>
+        <li>10% discount on chamber training events</li>
+        <li>Access to business development workshops</li>
+        <li>One social media mention per quarter</li>
+        <li>Chamber referral network access</li>
+      </ul>
+    </dialog>
+
+    <dialog id="modal-silver">
+      <button class="close-modal" aria-label="Close modal">Close ✕</button>
+      <h2>Silver Membership</h2>
+      <p class="modal-fee">₦150,000 / year</p>
+      <ul class="modal-benefits">
+        <li>All Bronze benefits included</li>
+        <li>Priority listing in the business directory</li>
+        <li>20% discount on all chamber events</li>
+        <li>Monthly spotlight on chamber social media</li>
+        <li>Access to exclusive member luncheons</li>
+        <li>Two complimentary event tickets per year</li>
+        <li>Business advisory consultation (2 sessions/year)</li>
+      </ul>
+    </dialog>
+
+    <dialog id="modal-gold">
+      <button class="close-modal" aria-label="Close modal">Close ✕</button>
+      <h2>Gold Membership</h2>
+      <p class="modal-fee">₦350,000 / year</p>
+      <ul class="modal-benefits">
+        <li>All Silver benefits included</li>
+        <li>Premium spotlight on chamber homepage</li>
+        <li>Free access to all chamber events</li>
+        <li>Weekly social media promotion</li>
+        <li>VIP seating at annual business summit</li>
+        <li>Dedicated account manager</li>
+        <li>Logo placement on chamber website and materials</li>
+        <li>Unlimited business advisory consultations</li>
+      </ul>
+    </dialog>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-info">
+        <h2>Lagos Chamber of Commerce</h2>
+        <p class="footer-motto">Where Lagos business comes alive.</p>
+        <p>Leadway Marble House, 1 Alfred Rewane Road,<br>Ikoyi, Lagos, Nigeria</p>
+        <p>Email: info@lagoschamber.org</p>
+        <p>Phone: +234 1 269 2190</p>
+      </div>
+      <div class="footer-nav">
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-dev">
+        <p>&copy; <span id="currentyear"></span> Lagos Chamber of Commerce</p>
+        <p>Brinley Francis &bull; WDD 231</p>
+        <p id="lastModified"></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

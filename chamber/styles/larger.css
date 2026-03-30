@@ -121,6 +121,29 @@
     text-align: right;
   }
 
+  /* ── Join Page ── */
+  .join-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 2rem;
+    align-items: start;
+  }
+
+  /* ── Thank You Page ── */
+  .thankyou-section {
+    margin: 0 2rem 2rem;
+  }
+
+  .thankyou-actions {
+    flex-direction: row;
+    padding: 0 1rem 1.5rem;
+  }
+
+  .thankyou-btn {
+    flex: 1;
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -148,6 +171,16 @@
   .members-grid {
     grid-template-columns: repeat(3, 1fr);
     padding: 0 3rem 3rem;
+  }
+
+  /* ── Join Page ── */
+  .join-grid {
+    padding: 2rem 3rem;
+  }
+
+  /* ── Thank You Page ── */
+  .thankyou-section {
+    margin: 0 3rem 3rem;
   }
 
 }
