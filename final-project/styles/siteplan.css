@@ -1,0 +1,480 @@
+/* =============================================
+   siteplan.css - Digital Skills Resource Hub
+   Site Plan Document Styles
+   WDD 231 | Brinley Francis
+   ============================================= */
+
+:root {
+  --primary:    #00a8a8;   /* Teal — top header, footer, section heading bars, button backgrounds */
+  --secondary:  #7c3aed;   /* Purple — navigation bar, CTAs, badges, text highlights */
+  --bg:         #fefaea;   /* Cream — page background, secondary sections, form backgrounds */
+  --accent-1:   #9ad3da;   /* Light Teal — cards, scenario backgrounds, borders */
+  --accent-2:   #ffffff;   /* White — card surfaces, form inputs, modals */
+  --text:       #1a1a1a;   /* Near Black — all body text */
+  --radius:     8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── TOP HEADER ── */
+header {
+  background-color: var(--primary);
+  color: var(--accent-2);
+  padding: 1.5rem 2rem;
+  border-bottom: 4px solid var(--secondary);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.logo-mark {
+  width: 56px;
+  height: 56px;
+  background-color: var(--secondary);
+  color: var(--accent-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 0.85rem;
+  border-radius: var(--radius);
+  flex-shrink: 0;
+  letter-spacing: 0.05em;
+}
+
+header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 0;
+  color: var(--text);
+}
+
+.tagline {
+  font-size: 0.9rem;
+  margin: 0;
+  color: var(--text);
+}
+
+.byline {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text);
+  margin: 0.5rem auto 0;
+  max-width: 1100px;
+}
+
+/* ── NAVIGATION HEADER ── */
+.site-nav {
+  background-color: var(--secondary);
+  padding: 0 2rem;
+}
+
+.site-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.site-nav ul li a {
+  display: block;
+  padding: 0.75rem 1.2rem;
+  color: var(--accent-2);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.site-nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ── MAIN ── */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ── PLAN SECTIONS ── */
+.plan-section {
+  background-color: var(--accent-2);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+
+.plan-section h2 {
+  background-color: var(--primary);
+  color: var(--text);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.85rem 1.5rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.section-content {
+  padding: 1.5rem;
+}
+
+.section-content p {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+.section-content ul {
+  padding-left: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+.section-content ul li {
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+/* ── SITE NAME ── */
+.site-title-display {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin: 0 0 1rem;
+}
+
+.domain-note {
+  background-color: var(--bg);
+  border-left: 4px solid var(--secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 0.85rem;
+}
+
+.domain-note span {
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+/* ── SCENARIOS ── */
+.scenario-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.scenario-card {
+  background-color: var(--accent-1);
+  border-radius: var(--radius);
+  padding: 1rem 1rem 1rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.scenario-number {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--secondary);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.scenario-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text);
+}
+
+/* ── COLOR PALETTE ── */
+.color-palette {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.color-swatch {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--bg);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  border: 1px solid var(--accent-1);
+}
+
+.swatch-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.swatch-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.swatch-info strong {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.swatch-info code {
+  font-size: 0.8rem;
+  background-color: var(--accent-1);
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  color: var(--text);
+  width: fit-content;
+}
+
+.swatch-info span {
+  font-size: 0.8rem;
+  color: var(--text);
+  opacity: 0.8;
+}
+
+/* ── CONTRAST TABLE ── */
+.contrast-note {
+  margin-top: 1.5rem;
+  background-color: var(--bg);
+  border-radius: var(--radius);
+  padding: 1rem;
+  border: 1px solid var(--accent-1);
+}
+
+.contrast-note h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin: 0 0 0.75rem;
+}
+
+.contrast-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.contrast-table th {
+  background-color: var(--primary);
+  color: var(--text);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+.contrast-table td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--accent-1);
+  color: var(--text);
+}
+
+.contrast-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pass {
+  color: #276749;
+  font-weight: 700;
+}
+
+/* ── TYPOGRAPHY ── */
+.font-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.font-card {
+  background-color: var(--bg);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  border: 1px solid var(--accent-1);
+}
+
+.font-card h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin: 0 0 0.3rem;
+}
+
+.font-source {
+  font-size: 0.8rem;
+  color: var(--text);
+  opacity: 0.7;
+  margin: 0 0 0.3rem;
+}
+
+.font-usage {
+  font-size: 0.85rem;
+  color: var(--text);
+  margin: 0 0 1rem;
+  font-weight: 500;
+}
+
+.font-sample {
+  background-color: var(--accent-2);
+  border-radius: 6px;
+  padding: 1rem;
+  border: 1px solid var(--accent-1);
+}
+
+.poppins-sample .sample-h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--secondary);
+  margin: 0 0 0.5rem;
+}
+
+.poppins-sample .sample-h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 0.3rem;
+}
+
+.poppins-sample .sample-h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--secondary);
+  margin: 0;
+}
+
+.inter-sample .sample-body {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin: 0 0 0.5rem;
+}
+
+.inter-sample .sample-small {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: var(--text);
+  opacity: 0.75;
+  margin: 0;
+}
+
+/* ── WIREFRAME ── */
+.wireframe-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
+  align-items: stretch;
+}
+
+.wireframe-container h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin: 0 0 0.75rem;
+}
+
+.wireframe-container img {
+  width: 100%;
+  min-height: auto;
+  object-position: top;
+  border-radius: var(--radius);
+  border: 2px solid var(--accent-1);
+  display: block;
+}
+
+/* ── FOOTER ── */
+footer {
+  background-color: var(--primary);
+  color: var(--text);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  border-top: 4px solid var(--secondary);
+}
+
+/* ── RESPONSIVE ── */
+@media (min-width: 700px) {
+
+  main {
+    padding: 2rem;
+  }
+
+  .scenario-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .color-palette {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .font-showcase {
+    flex-direction: row;
+  }
+
+  .font-card {
+    flex: 1;
+  }
+
+  .wireframe-grid {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .wireframe-container {
+    flex: 1;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  main {
+    padding: 2rem 3rem;
+  }
+
+  .color-palette {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
