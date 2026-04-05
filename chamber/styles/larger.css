@@ -3,7 +3,7 @@
    Lagos Chamber of Commerce | WDD 231
    Brinley Francis
    ============================================= */
-
+   
 @media (min-width: 700px) {
 
   /* ── Header ── */
@@ -144,6 +144,28 @@
     flex: 1;
   }
 
+  /* ── Discover Page - Medium (700px–1023px) ── */
+  .places-grid {
+    grid-template-areas:
+      "place1 place2"
+      "place3 place3"
+      "place4 place5"
+      "place6 place6"
+      "place7 place8";
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+
+  /* Image hover effect - medium and above only */
+  .place-card figure img {
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+
+  .place-card figure img:hover {
+    filter: brightness(1.12) saturate(1.2);
+    transform: scale(1.05);
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -181,6 +203,16 @@
   /* ── Thank You Page ── */
   .thankyou-section {
     margin: 0 3rem 3rem;
+  }
+
+  /* ── Discover Page - Large (1024px+) ── */
+  .places-grid {
+    grid-template-areas:
+      "place1 place2 place3"
+      "place4 place4 place5"
+      "place6 place7 place8";
+    gap: 1.5rem;
+    padding: 2rem 3rem;
   }
 
 }

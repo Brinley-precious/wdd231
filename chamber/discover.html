@@ -3,33 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thank You | Lagos Chamber of Commerce</title>
-  <meta name="description" content="Thank you for applying to join the Lagos Chamber of Commerce. We have received your membership application.">
+  <title>Discover Lagos | Lagos Chamber of Commerce</title>
+  <meta name="description" content="Discover the best of Lagos — from world-class art galleries and conservation centres to iconic bridges and vibrant markets. Explore what makes Lagos extraordinary.">
   <meta name="author" content="Brinley Francis">
 
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Thank You | Lagos Chamber of Commerce">
-  <meta property="og:description" content="Thank you for applying to join the Lagos Chamber of Commerce. We have received your membership application.">
+  <meta property="og:title" content="Discover Lagos | Lagos Chamber of Commerce">
+  <meta property="og:description" content="Explore 8 remarkable places of interest in Lagos — culture, nature, commerce, and more.">
   <meta property="og:image" content="https://brinley-precious.github.io/wdd231/chamber/images/chamber-og.webp">
-  <meta property="og:url" content="https://brinley-precious.github.io/wdd231/chamber/thankyou.html">
+  <meta property="og:url" content="https://brinley-precious.github.io/wdd231/chamber/discover.html">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- Normalize first -->
+  <!-- Normalize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
   <!-- Chamber CSS -->
   <link rel="stylesheet" href="styles/small.css">
   <link rel="stylesheet" href="styles/larger.css">
 
-  <!-- Scripts -->
-  <script src="scripts/thankyou.js" defer></script>
+  <!-- Script -->
+  <script src="scripts/discover.js" type="module" defer></script>
 </head>
 <body>
 
@@ -48,8 +48,8 @@
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="directory.html">Directory</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li class="current"><a href="join.html">Join</a></li>
+      <li class="current"><a href="discover.html">Discover</a></li>
+      <li><a href="join.html">Join</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
@@ -57,18 +57,19 @@
   <main>
 
     <section class="directory-header">
-      <h1>Application Received!</h1>
-      <p>Thank you for taking the first step. We're excited to welcome you to the Lagos Chamber of Commerce network!</p>
+      <h1>Discover Lagos</h1>
+      <p>From canopy walkways to reclaimed ocean cities — explore eight remarkable places that make Lagos one of Africa's most extraordinary destinations.</p>
     </section>
 
-    <section class="thankyou-section">
-      <h2>Your Application Summary</h2>
-      <div id="application-summary"></div>
-      <div class="thankyou-actions">
-        <a href="index.html" class="thankyou-btn">Return to Home</a>
-        <a href="directory.html" class="thankyou-btn thankyou-btn-outline">Browse Our Members</a>
-      </div>
-    </section>
+    <!-- Visit Message -->
+    <div class="visit-banner">
+      <p id="visit-message"></p>
+    </div>
+
+    <!-- Places Grid -->
+    <div id="places-grid" class="places-grid">
+      <!-- Cards injected by discover.js -->
+    </div>
 
   </main>
 
