@@ -43,7 +43,7 @@ const grid = document.getElementById('places-grid');
 places.forEach((place, index) => {
   const card = document.createElement('article');
   card.classList.add('place-card');
-  card.style.gridArea = `place${index + 1}`;
+  card.classList.add(`place-${index + 1}`);
 
   card.innerHTML = `
     <h2>${place.name}</h2>

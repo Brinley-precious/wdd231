@@ -1148,6 +1148,7 @@ dialog h2 {
 /* Places Grid - Small (single column) */
 .places-grid {
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-areas:
     "place1"
     "place2"
@@ -1160,6 +1161,15 @@ dialog h2 {
   gap: 1.2rem;
   padding: 1rem;
 }
+
+.place-1 { grid-area: place1; }
+.place-2 { grid-area: place2; }
+.place-3 { grid-area: place3; }
+.place-4 { grid-area: place4; }
+.place-5 { grid-area: place5; }
+.place-6 { grid-area: place6; }
+.place-7 { grid-area: place7; }
+.place-8 { grid-area: place8; }
  
 /* Place Card */
 .place-card {

@@ -4,7 +4,7 @@ const places = [
     maps: "https://maps.google.com/?q=Lekki+Conservation+Centre+Lagos",
     name: "Lekki Conservation Centre",
     address: "Km 19, Lekki-Epe Expressway, Lekki, Lagos",
-    description: "Suspended 401 metres above a canopy of green, the Lekki Conservation Centre is home to Africa's longest canopy walkway â€” and the view from up there will genuinely take your breath away. Below, wetlands and wildlife reserves shelter monkeys, birds, and reptiles that most Lagosians have never seen this close.",
+    description: "Suspended 401 metres above a canopy of green, the Lekki Conservation Centre is home to Africa's longest canopy walkway” and the view from up there will genuinely take your breath away. Below, wetlands and wildlife reserves shelter monkeys, birds, and reptiles that most Lagosians have never seen this close.",
     image: "images/lekki-conservation.webp",
     alt: "Aerial view of the canopy walkway at Lekki Conservation Centre surrounded by lush green forest"
   },
@@ -13,7 +13,7 @@ const places = [
     maps: "https://maps.google.com/?q=Nike+Art+Gallery+Lekki+Lagos",
     name: "Nike Art Gallery",
     address: "2 Elegans Road, Lekki Phase 1, Lagos",
-    description: "Spread across five floors and overflowing with over 8,000 works of art, Nike Art Gallery is less of a gallery and more of a living archive of African creativity. Founded by legendary textile artist Nike Davies-Okundaye, every room tells a different story â€” from vibrant oil paintings to hand-stitched adire fabric that could stop you mid-step.",
+    description: "Spread across five floors and overflowing with over 8,000 works of art, Nike Art Gallery is less of a gallery and more of a living archive of African creativity. Founded by legendary textile artist Nike Davies-Okundaye, every room tells a different story” from vibrant oil paintings to hand-stitched adire fabric that could stop you mid-step.",
     image: "images/nike-art-gallery.webp",
     alt: "Colourful artworks and textile displays inside Nike Art Gallery in Lagos"
   },
@@ -22,7 +22,7 @@ const places = [
     maps: "https://maps.google.com/?q=Eko+Atlantic+City+Lagos",
     name: "Eko Atlantic City",
     address: "Victoria Island Extension, Lagos",
-    description: "Built entirely on land reclaimed from the Atlantic Ocean, Eko Atlantic is Lagos boldly rewriting its own future. The skyline here feels borrowed from somewhere two decades ahead â€” gleaming towers, wide boulevards, and an ocean breeze that makes the heat almost forgettable.",
+    description: "Built entirely on land reclaimed from the Atlantic Ocean, Eko Atlantic is Lagos boldly rewriting its own future. The skyline here feels borrowed from somewhere two decades ahead” gleaming towers, wide boulevards, and an ocean breeze that makes the heat almost forgettable.",
     image: "images/eko-atlantic.webp",
     alt: "Modern skyline and waterfront of Eko Atlantic City on reclaimed land in Lagos"
   },
@@ -31,7 +31,7 @@ const places = [
     maps: "https://maps.google.com/?q=National+Museum+Lagos+Onikan",
     name: "National Museum Lagos",
     address: "Onikan, Lagos Island, Lagos",
-    description: "Tucked quietly on Lagos Island, the National Museum holds some of the most significant cultural artefacts in West Africa â€” including iconic Benin Bronzes and ancient Nok terracotta figurines that predate modern Nigeria by over two thousand years. Walking through its halls feels less like a museum visit and more like a conversation with ancestors.",
+    description: "Tucked quietly on Lagos Island, the National Museum holds some of the most significant cultural artefacts in West Africa” including iconic Benin Bronzes and ancient Nok terracotta figurines that predate modern Nigeria by over two thousand years. Walking through its halls feels less like a museum visit and more like a conversation with ancestors.",
     image: "images/national-museum.webp",
     alt: "Cultural artefacts and exhibits inside the National Museum on Lagos Island"
   },
@@ -40,7 +40,7 @@ const places = [
     maps: "https://maps.google.com/?q=Balogun+Market+Lagos+Island",
     name: "Balogun Market",
     address: "Balogun Street, Lagos Island, Lagos",
-    description: "Balogun is not just a market â€” it is a full sensory experience that has been powering Lagos commerce for generations. Fabrics cascade from every stall, traders negotiate in four languages simultaneously, and the energy of the place hums like a city within a city.",
+    description: "Balogun is not just a market” it is a full sensory experience that has been powering Lagos commerce for generations. Fabrics cascade from every stall, traders negotiate in four languages simultaneously, and the energy of the place hums like a city within a city.",
     image: "images/balogun-market.webp",
     alt: "Busy stalls and colourful fabrics at Balogun Market on Lagos Island"
   },

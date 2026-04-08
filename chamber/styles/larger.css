@@ -146,6 +146,7 @@
 
   /* ── Discover Page - Medium (700px–1023px) ── */
   .places-grid {
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "place1 place2"
       "place3 place3"
@@ -207,6 +208,7 @@
 
   /* ── Discover Page - Large (1024px+) ── */
   .places-grid {
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       "place1 place2 place3"
       "place4 place4 place5"
