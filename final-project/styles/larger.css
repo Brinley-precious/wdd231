@@ -1,0 +1,227 @@
+/* =============================================
+   larger.css - Larger screen styles
+   Digital Skills Resource Hub | WDD 231
+   Brinley Francis
+   ============================================= */
+
+@media (min-width: 700px) {
+
+  /* ── Header ── */
+  header {
+    grid-template-columns: 1fr;
+    padding: 0.85rem 2rem;
+  }
+
+  /* ── Navigation ── */
+  .hamburger {
+    display: none;
+  }
+
+  .navigation {
+    display: block;
+  }
+
+  .navigation ul {
+    display: flex;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navigation ul li a {
+    border-bottom: none;
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 0.85rem 1.4rem;
+    font-size: 0.85rem;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    padding: 5rem 2rem;
+    text-align: left;
+  }
+
+  .hero-content {
+    margin: 0;
+    max-width: 580px;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .hero-actions {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  /* ── Stats ── */
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  /* ── Section Headers ── */
+  .section-header {
+    padding: 2.5rem 2rem 1.5rem;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  /* ── Featured Courses ── */
+  .featured-courses {
+    padding: 1rem 2rem 2rem;
+  }
+
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* ── Filter Section ── */
+  .filter-section {
+    padding: 1.5rem 2rem;
+  }
+
+  /* ── Stories ── */
+  .stories-section {
+    padding: 1rem 2rem 2rem;
+  }
+
+  .stories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  /* ── Newsletter ── */
+  .newsletter-section {
+    padding: 4rem 2rem;
+  }
+
+  .newsletter-form {
+    flex-direction: row;
+  }
+
+  .newsletter-form input[type="text"],
+  .newsletter-form input[type="email"] {
+    flex: 1;
+  }
+
+  .newsletter-form input[type="submit"] {
+    flex-shrink: 0;
+  }
+
+  /* ── Page Header ── */
+  .page-header {
+    padding: 3rem 2rem;
+  }
+
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+
+  /* ── Modal ── */
+  .modal-img {
+    height: 250px;
+  }
+
+  /* ── Thank You ── */
+  .thankyou-section {
+    padding: 3rem 2rem;
+  }
+
+  .thankyou-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* ── Footer ── */
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 0 2rem;
+  }
+
+  .footer-brand {
+    flex: 2;
+  }
+
+  .footer-nav,
+  .footer-contact {
+    flex: 1;
+  }
+
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2rem 0;
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  header {
+    padding: 0.85rem 3rem;
+  }
+
+  .navigation ul {
+    padding: 0 3rem;
+  }
+
+  .hero {
+    padding: 6rem 3rem;
+  }
+
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .featured-courses {
+    padding: 1rem 3rem 3rem;
+  }
+
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .filter-section {
+    padding: 1.5rem 3rem;
+  }
+
+  .stories-section {
+    padding: 1rem 3rem 3rem;
+  }
+
+  .stories-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .newsletter-section {
+    padding: 5rem 3rem;
+  }
+
+  .page-header {
+    padding: 3.5rem 3rem;
+  }
+
+  .thankyou-section {
+    padding: 4rem 3rem;
+  }
+
+  .footer-content {
+    padding: 0 3rem;
+  }
+
+  .footer-bottom {
+    padding: 1.25rem 3rem 0;
+  }
+
+}

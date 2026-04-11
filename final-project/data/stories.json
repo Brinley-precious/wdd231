@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Amara Okafor",
+    "role": "Frontend Developer",
+    "location": "Lagos, Nigeria",
+    "image": "images/story-amara.webp",
+    "tags": ["Web Development", "HTML/CSS", "JavaScript"],
+    "excerpt": "From selling fabrics in Balogun Market to building websites for international clients — Amara's story proves that determination is the only prerequisite for a career in tech.",
+    "fullStory": "Amara spent six years running a fabric stall in Balogun Market before she stumbled on a free HTML tutorial on YouTube late one night. She had never touched a computer for more than sending emails, but something about the idea of building things on the internet fascinated her. She started with one hour every evening after closing her stall, learning HTML and CSS on a borrowed laptop. Within eight months she had built her first portfolio website. Within a year she landed her first paying client — a small Lagos business that needed a website. Today Amara works remotely as a frontend developer for a UK-based agency, earning more in a month than she used to in a year. The internet gave me a classroom that never closed, she says. I just had to show up."
+  },
+  {
+  "id": 2,
+  "name": "Brinley Francis",
+  "role": "Software Engineering Student",
+  "location": "Akwa Ibom, Nigeria",
+  "image": "images/story-brinley.webp",
+ "tags": ["Software Engineering", "Customer Support", "Virtual Assistant", "HTML/CSS", "JavaScript", "Web Development"],
+  "excerpt": "Brinley was exploring new career paths when curiosity about tech sparked something in her, and what started as a question became a commitment that now drives her to help others find their own way in.",
+  "fullStory": "Brinley was exploring new career paths when she first became curious about tech and remote work. She kept seeing stories of people building new opportunities through digital skills, and it sparked something in her. At first, software development sounded intimidating. Almost everywhere she looked, people described it as difficult, and she questioned herself many times, asking, is this something I can really do? Still, she did not ignore the curiosity. She spent time watching YouTube tutorials, researching beginner guides, and eventually decided to pursue a degree in software engineering. What started as curiosity slowly turned into commitment. Along the way she realized that the biggest barrier was not intelligence, it was fear, doubt, and not knowing where to begin. That realization is what now fuels her passion to help others who feel stuck, overwhelmed, or unsure about entering the digital world."
+  },
+  {
+    "id": 3,
+    "name": "Fatima Al-Hassan",
+    "role": "UI/UX Designer",
+    "location": "Abuja, Nigeria",
+    "image": "images/story-fatima.webp",
+    "tags": ["UI/UX Design", "Figma", "Product Design"],
+    "excerpt": "A trained nurse who discovered design through a mobile app she hated using — and decided to build something better herself.",
+    "fullStory": "Fatima was working night shifts at a clinic in Abuja when she downloaded a health app that was so confusing it made her job harder. Frustrated, she started reading about why apps are designed the way they are. That rabbit hole led her to UI/UX design. She took a free Figma course on YouTube and spent her off-days redesigning apps she found frustrating. She documented every redesign on Behance. A design agency noticed her portfolio after she posted a healthcare app redesign that went semi-viral on Twitter. They offered her a junior designer position. She still works in healthcare, just from a different angle now. Bad design made me a designer, she laughs. I am grateful for every confusing app I ever used."
+  },
+  {
+    "id": 4,
+    "name": "Daniel Osei",
+    "role": "Digital Marketing Manager",
+    "location": "Kumasi, Ghana",
+    "image": "images/story-daniel.webp",
+    "tags": ["Digital Marketing", "Social Media", "SEO"],
+    "excerpt": "Daniel turned his small chop bar's social media page into a digital marketing education — and eventually into a career managing marketing for multiple brands.",
+    "fullStory": "Daniel's family owned a small chop bar in Kumasi. When business slowed down, he decided to try promoting it on Instagram. He had no idea what he was doing but started watching every digital marketing video he could find. He tested strategies on the chop bar's page, tracked results, and learned from every failure. The page grew from 200 to 8,000 followers in six months and sales doubled. Local businesses started asking him for advice. He formalized his knowledge by completing a free Google Digital Marketing certification. Within two years he had three paying clients. Today he manages digital marketing for eight brands and still occasionally posts about his family's chop bar. I learned marketing by trying to save a business, he says. Now I do it for a living."
+  },
+  {
+    "id": 5,
+    "name": "Ngozi Eze",
+    "role": "Cybersecurity Analyst",
+    "location": "Port Harcourt, Nigeria",
+    "image": "images/story-ngozi.webp",
+    "tags": ["Cybersecurity", "Networking", "Ethical Hacking"],
+    "excerpt": "Ngozi went from IT support at a bank to cybersecurity analyst after spending a year self-studying ethical hacking on nights and weekends.",
+    "fullStory": "Ngozi had worked in IT support at a bank in Port Harcourt for four years. She reset passwords, fixed printers, and answered tickets. She was good at it but bored. A security incident at the bank made her realize how important cybersecurity was and how few people truly understood it. She started studying on her own: free YouTube courses on ethical hacking, CompTIA Security+ study materials, and eventually a free Cisco networking course. She practiced on virtual labs late at night after her children went to bed. After passing the Security+ certification, she applied for a cybersecurity analyst role at a different organization. They hired her within a month. Nobody handed me this, she says firmly. I built it, one late night at a time."
+  },
+  {
+    "id": 6,
+    "name": "Ibrahim Traore",
+    "role": "Mobile App Developer",
+    "location": "Dakar, Senegal",
+    "image": "images/story-ibrahim.webp",
+    "tags": ["Mobile Development", "Flutter", "React Native"],
+    "excerpt": "Ibrahim built his first app to solve a problem in his community — and ended up with a career building apps for clients across three continents.",
+    "fullStory": "Ibrahim grew up in a neighborhood in Dakar where power cuts were frequent and unpredictable. He wanted to build an app that would alert residents when power was about to be restored. He had no programming background but found a Flutter course on YouTube that looked doable. He learned by building, not by reading theory. His first app was buggy and barely worked. His second was better. His third actually helped his neighbors. He posted about it on Twitter and it was shared by a tech community. A developer in the UK reached out and offered to pay him to build something similar for a project in Ghana. That was his first freelance job. Today Ibrahim works remotely for clients in Nigeria, Canada, and Germany, and mentors young developers in his community on weekends. My neighborhood gave me the problem, he says. The internet gave me the tools to solve it."
+  }
+]
