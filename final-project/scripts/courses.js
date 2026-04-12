@@ -2,7 +2,7 @@
 // Digital Skills Resource Hub - Courses Page
 // WDD 231 | Brinley Francis
 
-import { CATEGORY_QUERIES, fetchCoursesByCategory, buildCourseCard } from './courses-api.js';
+import { CATEGORY_QUERIES, fetchCoursesByCategory, buildCourseCard, FALLBACK_COURSES } from './courses-api.js';
 
 // ── Nav hamburger ──
 const navButton = document.querySelector('#nav-button');
@@ -20,30 +20,21 @@ const coursesGrid = document.getElementById('courses-grid');
 const filterButtons = document.querySelectorAll('.filter-btn');
 let allCourses = [];
 
-// ── Load all courses from all categories ──
-async function loadAllCourses() {
-    try {
-        coursesGrid.innerHTML = '<p class="loading">Loading courses from YouTube...</p>';
+// ── Load fallback courses immediately ──
+function loadFallbackCourses() {
+    coursesGrid.innerHTML = '<p class="loading">Loading courses...</p>';
 
-        const fetchPromises = Object.entries(CATEGORY_QUERIES).map(
-            ([category, query]) => fetchCoursesByCategory(category, query, 3)
-        );
+    // Flatten all fallback courses into a single array
+    allCourses = Object.values(FALLBACK_COURSES).flat();
 
-        const results = await Promise.all(fetchPromises);
-        allCourses = results.flat();
+    // Apply saved filter from localStorage
+    const savedFilter = localStorage.getItem('preferredCategory') || 'all';
+    applyFilter(savedFilter);
 
-        // Apply saved filter from localStorage
-        const savedFilter = localStorage.getItem('preferredCategory') || 'all';
-        applyFilter(savedFilter);
-
-        // Highlight saved filter button
-        filterButtons.forEach(btn => {
-            btn.classList.toggle('active', btn.getAttribute('data-category') === savedFilter);
-        });
-
-    } catch (error) {
-        coursesGrid.innerHTML = `<p class="error-message">Could not load courses: ${error.message}</p>`;
-    }
+    // Highlight saved filter button
+    filterButtons.forEach(btn => {
+        btn.classList.toggle('active', btn.getAttribute('data-category') === savedFilter);
+    });
 }
 
 // ── Filter function using array filter method ──
@@ -66,12 +57,35 @@ function applyFilter(category) {
 
 // ── Filter button event listeners ──
 filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', async () => {
         const category = btn.getAttribute('data-category');
+
+        // Update active button state
         filterButtons.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         localStorage.setItem('preferredCategory', category);
-        applyFilter(category);
+
+        // If filtering to a specific category, try to fetch fresh data from API
+        if (category !== 'all') {
+            try {
+                coursesGrid.innerHTML = '<p class="loading">Loading fresh courses from YouTube...</p>';
+
+                const query = CATEGORY_QUERIES[category];
+                const freshCourses = await fetchCoursesByCategory(category, query, 3);
+
+                // Update allCourses with fresh data for this category
+                allCourses = allCourses.filter(course => course.category !== category);
+                allCourses = allCourses.concat(freshCourses);
+
+                applyFilter(category);
+            } catch (error) {
+                console.warn(`Failed to fetch fresh courses for ${category}, using fallback:`, error);
+                applyFilter(category);
+            }
+        } else {
+            // For "all" filter, just apply the current data
+            applyFilter(category);
+        }
     });
 });
 
@@ -94,4 +108,5 @@ modal.addEventListener('click', (e) => {
     if (e.target === modal) closeModal();
 });
 
-loadAllCourses();
+// Load fallback courses immediately on page load
+loadFallbackCourses();

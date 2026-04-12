@@ -2,7 +2,7 @@
 // Digital Skills Resource Hub - YouTube API Module
 // WDD 231 | Brinley Francis
 
-const API_KEY = 'AIzaSyDD6PnXr39p5LxdFxf6wOspBe--Q0daCRg';
+const API_KEY = 'AIzaSyAQuDMN4Fb9Uk0W6LBgAchVmlrpqjO04SE';
 const BASE_URL = 'https://www.googleapis.com/youtube/v3/search';
 
 export const CATEGORY_QUERIES = {
@@ -19,7 +19,8 @@ export const CATEGORY_QUERIES = {
   'Customer Service': 'customer service skills course'
 };
 
-const FALLBACK_COURSES = {
+// Curated real YouTube courses used as fallback when API quota is exceeded
+export const FALLBACK_COURSES = {
   'Web Development': [
     {
       id: 'GxmfcnU3feo',
@@ -34,25 +35,25 @@ const FALLBACK_COURSES = {
       category: 'Web Development'
     },
     {
-      id: 'u5vWFfZ6Csc',
-      title: 'HTML Tutorial for Beginners',
-      channel: 'The Syntax Squad01',
-      description: 'A clear beginner-friendly HTML course that covers everything from tags to page structure.',
-      thumbnail: 'https://i.ytimg.com/vi/u5vWFfZ6Csc/hqdefault.jpg',
-      publishedAt: '2024-03-05T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=u5vWFfZ6Csc',
+      id: 'G3e-cpL7ofc',
+      title: 'HTML & CSS Full Course for Beginners',
+      channel: 'SuperSimpleDev',
+      description: 'A clear beginner-friendly HTML and CSS course covering everything from tags to page layout.',
+      thumbnail: 'https://i.ytimg.com/vi/G3e-cpL7ofc/hqdefault.jpg',
+      publishedAt: '2023-03-05T00:00:00Z',
+      url: 'https://www.youtube.com/watch?v=G3e-cpL7ofc',
       platform: 'YouTube',
       free: true,
       category: 'Web Development'
     },
     {
-      id: 'ysEN5RaKOlA',
-      title: 'Learn Web Development as an Absolute Beginner',
-      channel: 'Coder Coder',
-      description: 'Start from zero with this beginner-friendly web development series.',
-      thumbnail: 'https://i.ytimg.com/vi/ysEN5RaKOlA/hqdefault.jpg',
-      publishedAt: '2019-07-15T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=ysEN5RaKOlA',
+      id: 'PkZNo7MFNFg',
+      title: 'Learn JavaScript - Full Course for Beginners',
+      channel: 'freeCodeCamp.org',
+      description: 'A complete JavaScript course for beginners covering fundamentals and real projects.',
+      thumbnail: 'https://i.ytimg.com/vi/PkZNo7MFNFg/hqdefault.jpg',
+      publishedAt: '2023-07-15T00:00:00Z',
+      url: 'https://www.youtube.com/watch?v=PkZNo7MFNFg',
       platform: 'YouTube',
       free: true,
       category: 'Web Development'
@@ -110,25 +111,25 @@ const FALLBACK_COURSES = {
       category: 'UI/UX Design'
     },
     {
-      id: 'HxV6A4TjT7s',
-      title: 'Figma UI/UX Design Tutorial',
+      id: 'c9Wg6Cb7YVU',
+      title: 'Figma UI Design Tutorial for Beginners',
       channel: 'DesignCourse',
       description: 'A beginner-friendly Figma tutorial that teaches UI design workflows from scratch.',
-      thumbnail: 'https://i.ytimg.com/vi/HxV6A4TjT7s/hqdefault.jpg',
+      thumbnail: 'https://i.ytimg.com/vi/c9Wg6Cb7YVU/hqdefault.jpg',
       publishedAt: '2023-07-14T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=HxV6A4TjT7s',
+      url: 'https://www.youtube.com/watch?v=c9Wg6Cb7YVU',
       platform: 'YouTube',
       free: true,
       category: 'UI/UX Design'
     },
     {
-      id: 'r4hZ2AO0tL4',
-      title: 'Beginner UI/UX Course',
-      channel: 'CharliMarieTV',
-      description: 'A modern introduction to UI/UX design with practical tips for beginners.',
-      thumbnail: 'https://i.ytimg.com/vi/r4hZ2AO0tL4/hqdefault.jpg',
+      id: 'Ovj4hFxko7c',
+      title: 'UX Design Course for Beginners',
+      channel: 'Google Career Certificates',
+      description: 'A modern introduction to UX design principles and research methods.',
+      thumbnail: 'https://i.ytimg.com/vi/Ovj4hFxko7c/hqdefault.jpg',
       publishedAt: '2023-10-02T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=r4hZ2AO0tL4',
+      url: 'https://www.youtube.com/watch?v=Ovj4hFxko7c',
       platform: 'YouTube',
       free: true,
       category: 'UI/UX Design'
@@ -148,25 +149,25 @@ const FALLBACK_COURSES = {
       category: 'Data Science'
     },
     {
-      id: '5Zg-C8AAIGg',
-      title: 'Data Science in 5 Hours',
+      id: 'JL_grPUnXzY',
+      title: 'Data Science for Beginners',
       channel: 'Alex The Analyst',
       description: 'A fast-paced introduction to data science with practical examples.',
-      thumbnail: 'https://i.ytimg.com/vi/5Zg-C8AAIGg/hqdefault.jpg',
+      thumbnail: 'https://i.ytimg.com/vi/JL_grPUnXzY/hqdefault.jpg',
       publishedAt: '2022-07-21T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=5Zg-C8AAIGg',
+      url: 'https://www.youtube.com/watch?v=JL_grPUnXzY',
       platform: 'YouTube',
       free: true,
       category: 'Data Science'
     },
     {
-      id: 'G7F4-qRQFrM',
-      title: 'Data Science for Beginners',
+      id: 'mkv5mxYu0Wk',
+      title: 'Statistics for Data Science',
       channel: 'Krish Naik',
-      description: 'A beginner course covering Python, pandas, and real-world data workflows.',
-      thumbnail: 'https://i.ytimg.com/vi/G7F4-qRQFrM/hqdefault.jpg',
+      description: 'A beginner course covering statistics, Python, and real-world data workflows.',
+      thumbnail: 'https://i.ytimg.com/vi/mkv5mxYu0Wk/hqdefault.jpg',
       publishedAt: '2023-09-05T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=G7F4-qRQFrM',
+      url: 'https://www.youtube.com/watch?v=mkv5mxYu0Wk',
       platform: 'YouTube',
       free: true,
       category: 'Data Science'
@@ -174,37 +175,37 @@ const FALLBACK_COURSES = {
   ],
   'Cybersecurity': [
     {
-      id: 'UpXn6HfO2U0',
-      title: 'Cybersecurity for Beginners',
+      id: 'hXSFdwIIsXc',
+      title: 'Cybersecurity for Beginners Full Course',
       channel: 'NetworkChuck',
       description: 'A beginner-friendly guide to cybersecurity concepts and hands-on labs.',
-      thumbnail: 'https://i.ytimg.com/vi/UpXn6HfO2U0/hqdefault.jpg',
+      thumbnail: 'https://i.ytimg.com/vi/hXSFdwIIsXc/hqdefault.jpg',
       publishedAt: '2024-01-12T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=UpXn6HfO2U0',
+      url: 'https://www.youtube.com/watch?v=hXSFdwIIsXc',
       platform: 'YouTube',
       free: true,
       category: 'Cybersecurity'
     },
     {
-      id: 'RJdC0iEejU4',
-      title: 'Ethical Hacking Tutorial',
-      channel: 'HackerSploit',
-      description: 'Learn the basics of ethical hacking, penetration testing, and cybersecurity defense.',
-      thumbnail: 'https://i.ytimg.com/vi/RJdC0iEejU4/hqdefault.jpg',
+      id: 'U_P23SqJaDc',
+      title: 'Ethical Hacking Full Course',
+      channel: 'freeCodeCamp.org',
+      description: 'Learn ethical hacking, penetration testing, and cybersecurity defense from scratch.',
+      thumbnail: 'https://i.ytimg.com/vi/U_P23SqJaDc/hqdefault.jpg',
       publishedAt: '2023-05-30T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=RJdC0iEejU4',
+      url: 'https://www.youtube.com/watch?v=U_P23SqJaDc',
       platform: 'YouTube',
       free: true,
       category: 'Cybersecurity'
     },
     {
-      id: 'mRLiJ_yKb4I',
-      title: 'Intro to Cybersecurity',
+      id: '3Kq1MIfTWCE',
+      title: 'Intro to Cybersecurity for Beginners',
       channel: 'Simplilearn',
-      description: 'A practical introduction to cybersecurity fundamentals and tools.',
-      thumbnail: 'https://i.ytimg.com/vi/mRLiJ_yKb4I/hqdefault.jpg',
+      description: 'A practical introduction to cybersecurity fundamentals and career paths.',
+      thumbnail: 'https://i.ytimg.com/vi/3Kq1MIfTWCE/hqdefault.jpg',
       publishedAt: '2023-02-03T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=mRLiJ_yKb4I',
+      url: 'https://www.youtube.com/watch?v=3Kq1MIfTWCE',
       platform: 'YouTube',
       free: true,
       category: 'Cybersecurity'
@@ -212,37 +213,37 @@ const FALLBACK_COURSES = {
   ],
   'Digital Marketing': [
     {
-      id: 'xL3DUpCgeEk',
+      id: 'bixR-NFAQB0',
       title: 'Digital Marketing Full Course',
-      channel: 'Neil Patel',
-      description: 'A practical digital marketing course for beginners covering SEO, social media, and ads.',
-      thumbnail: 'https://i.ytimg.com/vi/xL3DUpCgeEk/hqdefault.jpg',
+      channel: 'Simplilearn',
+      description: 'A practical digital marketing course covering SEO, social media, and paid ads.',
+      thumbnail: 'https://i.ytimg.com/vi/bixR-NFAQB0/hqdefault.jpg',
       publishedAt: '2024-02-21T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=xL3DUpCgeEk',
+      url: 'https://www.youtube.com/watch?v=bixR-NFAQB0',
       platform: 'YouTube',
       free: true,
       category: 'Digital Marketing'
     },
     {
-      id: '3Y9v2zMkH0s',
-      title: 'Social Media Marketing Tutorial',
+      id: 'nU-IIXBWlS4',
+      title: 'Social Media Marketing Course',
       channel: 'HubSpot',
       description: 'Learn how to create marketing campaigns for social media and grow your audience.',
-      thumbnail: 'https://i.ytimg.com/vi/3Y9v2zMkH0s/hqdefault.jpg',
+      thumbnail: 'https://i.ytimg.com/vi/nU-IIXBWlS4/hqdefault.jpg',
       publishedAt: '2023-11-08T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=3Y9v2zMkH0s',
+      url: 'https://www.youtube.com/watch?v=nU-IIXBWlS4',
       platform: 'YouTube',
       free: true,
       category: 'Digital Marketing'
     },
     {
-      id: '6wH0dAyR8V4',
-      title: 'SEO for Beginners',
+      id: 'DvwS7cV9GmQ',
+      title: 'SEO Full Course for Beginners',
       channel: 'Ahrefs',
       description: 'A beginner-friendly introduction to search engine optimization and keyword strategy.',
-      thumbnail: 'https://i.ytimg.com/vi/6wH0dAyR8V4/hqdefault.jpg',
+      thumbnail: 'https://i.ytimg.com/vi/DvwS7cV9GmQ/hqdefault.jpg',
       publishedAt: '2023-09-14T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=6wH0dAyR8V4',
+      url: 'https://www.youtube.com/watch?v=DvwS7cV9GmQ',
       platform: 'YouTube',
       free: true,
       category: 'Digital Marketing'
@@ -262,13 +263,13 @@ const FALLBACK_COURSES = {
       category: 'Graphic Design'
     },
     {
-      id: 'X1eweZgk0IE',
-      title: 'Illustrator & Photoshop Crash Course',
-      channel: "Yes I'm a Designer",
-      description: 'A design crash course for beginners using Illustrator and Photoshop workflows.',
-      thumbnail: 'https://i.ytimg.com/vi/X1eweZgk0IE/hqdefault.jpg',
+      id: 'WONZVnlam6U',
+      title: 'Canva Tutorial for Beginners',
+      channel: 'Yes I\'m a Designer',
+      description: 'Learn how to create professional designs using Canva from scratch.',
+      thumbnail: 'https://i.ytimg.com/vi/WONZVnlam6U/hqdefault.jpg',
       publishedAt: '2023-12-08T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=X1eweZgk0IE',
+      url: 'https://www.youtube.com/watch?v=WONZVnlam6U',
       platform: 'YouTube',
       free: true,
       category: 'Graphic Design'
@@ -288,37 +289,37 @@ const FALLBACK_COURSES = {
   ],
   'Mobile App Development': [
     {
-      id: 'E1eqG4fQB-E',
-      title: 'React Native App Development',
+      id: '0-S5HgT5UhI',
+      title: 'React Native Full Course for Beginners',
       channel: 'Traversy Media',
-      description: 'Build native mobile apps with React Native and JavaScript.',
-      thumbnail: 'https://i.ytimg.com/vi/E1eqG4fQB-E/hqdefault.jpg',
+      description: 'Build native mobile apps with React Native and JavaScript from scratch.',
+      thumbnail: 'https://i.ytimg.com/vi/0-S5HgT5UhI/hqdefault.jpg',
       publishedAt: '2023-07-06T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=E1eqG4fQB-E',
+      url: 'https://www.youtube.com/watch?v=0-S5HgT5UhI',
       platform: 'YouTube',
       free: true,
       category: 'Mobile App Development'
     },
     {
-      id: 'JZMf7qx1zAU',
+      id: 'VPvVD8t02U8',
       title: 'Flutter App Development for Beginners',
       channel: 'Fireship',
       description: 'A fast-paced introduction to building mobile apps with Flutter.',
-      thumbnail: 'https://i.ytimg.com/vi/JZMf7qx1zAU/hqdefault.jpg',
+      thumbnail: 'https://i.ytimg.com/vi/VPvVD8t02U8/hqdefault.jpg',
       publishedAt: '2024-02-01T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=JZMf7qx1zAU',
+      url: 'https://www.youtube.com/watch?v=VPvVD8t02U8',
       platform: 'YouTube',
       free: true,
       category: 'Mobile App Development'
     },
     {
-      id: '6M5VXKLf4D4',
-      title: 'Android Development Tutorial',
-      channel: 'Android Developers',
-      description: 'A beginner-friendly guide to building apps with Android Studio and Kotlin.',
-      thumbnail: 'https://i.ytimg.com/vi/6M5VXKLf4D4/hqdefault.jpg',
+      id: 'fis26HvvDII',
+      title: 'Android Development for Beginners',
+      channel: 'freeCodeCamp.org',
+      description: 'A beginner-friendly guide to building Android apps with Kotlin.',
+      thumbnail: 'https://i.ytimg.com/vi/fis26HvvDII/hqdefault.jpg',
       publishedAt: '2023-09-14T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=6M5VXKLf4D4',
+      url: 'https://www.youtube.com/watch?v=fis26HvvDII',
       platform: 'YouTube',
       free: true,
       category: 'Mobile App Development'
@@ -329,7 +330,7 @@ const FALLBACK_COURSES = {
       id: 'M-UAuvujYKY',
       title: 'Project Management Essentials',
       channel: 'ProjectManager',
-      description: 'A practical guide to managing projects, teams, and deadlines.',
+      description: 'A practical guide to managing projects, teams, and deadlines effectively.',
       thumbnail: 'https://i.ytimg.com/vi/M-UAuvujYKY/hqdefault.jpg',
       publishedAt: '2022-10-11T00:00:00Z',
       url: 'https://www.youtube.com/watch?v=M-UAuvujYKY',
@@ -338,25 +339,25 @@ const FALLBACK_COURSES = {
       category: 'Project Management'
     },
     {
-      id: 'HLk5v4fT8ZE',
-      title: 'Agile Project Management',
-      channel: 'LinkedIn Learning',
+      id: '9tSbMs6FoiU',
+      title: 'Agile Project Management Full Course',
+      channel: 'Simplilearn',
       description: 'Learn agile planning, sprints, and team coordination for modern projects.',
-      thumbnail: 'https://i.ytimg.com/vi/HLk5v4fT8ZE/hqdefault.jpg',
+      thumbnail: 'https://i.ytimg.com/vi/9tSbMs6FoiU/hqdefault.jpg',
       publishedAt: '2023-08-17T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=HLk5v4fT8ZE',
+      url: 'https://www.youtube.com/watch?v=9tSbMs6FoiU',
       platform: 'YouTube',
       free: true,
       category: 'Project Management'
     },
     {
-      id: 'n4EzwTI13dc',
+      id: 'GE6khKFpqqQ',
       title: 'Project Planning for Beginners',
       channel: 'Smartsheet',
-      description: "A beginner's guide to planning, scheduling, and tracking project work.",
-      thumbnail: 'https://i.ytimg.com/vi/n4EzwTI13dc/hqdefault.jpg',
+      description: 'A beginner guide to planning, scheduling, and tracking project work.',
+      thumbnail: 'https://i.ytimg.com/vi/GE6khKFpqqQ/hqdefault.jpg',
       publishedAt: '2023-05-20T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=n4EzwTI13dc',
+      url: 'https://www.youtube.com/watch?v=GE6khKFpqqQ',
       platform: 'YouTube',
       free: true,
       category: 'Project Management'
@@ -388,13 +389,13 @@ const FALLBACK_COURSES = {
       category: 'Product Design'
     },
     {
-      id: 'uJlGkUqK8Qo',
+      id: 'a0K_bCBCPiw',
       title: 'Design Thinking for Beginners',
-      channel: 'Google Design',
-      description: 'A beginner-friendly guide to design thinking and product research.',
-      thumbnail: 'https://i.ytimg.com/vi/uJlGkUqK8Qo/hqdefault.jpg',
+      channel: 'IDEO',
+      description: 'A beginner-friendly guide to design thinking and human-centered product design.',
+      thumbnail: 'https://i.ytimg.com/vi/a0K_bCBCPiw/hqdefault.jpg',
       publishedAt: '2024-02-14T00:00:00Z',
-      url: 'https://www.youtube.com/watch?v=uJlGkUqK8Qo',
+      url: 'https://www.youtube.com/watch?v=a0K_bCBCPiw',
       platform: 'YouTube',
       free: true,
       category: 'Product Design'
@@ -440,17 +441,12 @@ const FALLBACK_COURSES = {
   ]
 };
 
-function getFallbackCourses(category, maxResults) {
-  const fallback = FALLBACK_COURSES[category] || [];
-  return fallback.slice(0, maxResults);
-}
-
 export async function fetchCoursesByCategory(category, query, maxResults = 3) {
   try {
     const url = `${BASE_URL}?part=snippet&type=video&q=${encodeURIComponent(query)}&maxResults=${maxResults}&key=${API_KEY}`;
     const response = await fetch(url);
     if (!response.ok) {
-      throw new Error(`YouTube API error: ${response.status}`);
+      throw new Error(`YouTube API error ${response.status}: ${await response.text()}`);
     }
     const data = await response.json();
     return data.items.map(item => ({
@@ -466,13 +462,8 @@ export async function fetchCoursesByCategory(category, query, maxResults = 3) {
       category: category
     }));
   } catch (error) {
-    console.warn(`YouTube API failed for ${category}, using fallback data.`, error);
-    const fallback = getFallbackCourses(category, maxResults);
-    if (fallback.length > 0) {
-      return fallback;
-    }
-    console.error(`No fallback data available for category: ${category}`);
-    throw error;
+    console.warn(`YouTube API failed for ${category}, using fallback.`, error);
+    return FALLBACK_COURSES[category] || [];
   }
 }
 
@@ -482,63 +473,28 @@ export function buildCourseCard(course) {
   card.setAttribute('data-category', course.category);
 
   const year = new Date(course.publishedAt).getFullYear();
-  const placeholderThumbnail = 'data:image/svg+xml;charset=UTF-8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'320\' height=\'180\'><rect width=\'100%\' height=\'100%\' fill=\'%23e2e8f0\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%237c3aed\' font-family=\'Inter, sans-serif\' font-size=\'16\'>Course image unavailable</text></svg>';
 
-  const thumbnailWrapper = document.createElement('div');
-  thumbnailWrapper.className = 'course-thumbnail';
-
-  const img = document.createElement('img');
-  img.src = course.thumbnail || placeholderThumbnail;
-  img.alt = course.title;
-  img.width = 320;
-  img.height = 180;
-  img.loading = 'lazy';
-  img.addEventListener('error', () => {
-    img.onerror = null;
-    img.src = placeholderThumbnail;
-  });
-
-  const badge = document.createElement('span');
-  badge.className = 'course-category-badge';
-  badge.textContent = course.category;
-
-  thumbnailWrapper.appendChild(img);
-  thumbnailWrapper.appendChild(badge);
-
-  const body = document.createElement('div');
-  body.className = 'course-body';
-
-  const title = document.createElement('h3');
-  title.className = 'course-title';
-  title.textContent = course.title;
-
-  const metaLine = document.createElement('p');
-  metaLine.className = 'course-channel';
-  metaLine.innerHTML = `${course.channel} &bull; ${year}`;
-
-  const courseMeta = document.createElement('div');
-  courseMeta.className = 'course-meta';
-
-  const platform = document.createElement('span');
-  platform.className = 'course-platform';
-  platform.textContent = course.platform;
-
-  const freeTag = document.createElement('span');
-  freeTag.className = 'course-free';
-  freeTag.textContent = 'Free';
-
-  courseMeta.appendChild(platform);
-  courseMeta.appendChild(freeTag);
-
-  body.appendChild(title);
-  body.appendChild(metaLine);
-  body.appendChild(courseMeta);
-
-  card.appendChild(thumbnailWrapper);
-  card.appendChild(body);
+  card.innerHTML = `
+    <div class="course-thumbnail">
+      <img
+        src="${course.thumbnail}"
+        alt="${course.title}"
+        width="320"
+        height="180"
+        loading="lazy">
+      <span class="course-category-badge">${course.category}</span>
+    </div>
+    <div class="course-body">
+      <h3 class="course-title">${course.title}</h3>
+      <p class="course-channel">${course.channel} &bull; ${year}</p>
+      <div class="course-meta">
+        <span class="course-platform">${course.platform}</span>
+        <span class="course-free">Free</span>
+      </div>
+    </div>
+  `;
 
   card.addEventListener('click', () => openCourseModal(course));
-
   return card;
 }
 
@@ -561,23 +517,6 @@ function openCourseModal(course) {
   `;
 
   modal.showModal();
-
-  // Replace img with iframe for video
-  setTimeout(() => {
-    const videoId = course.url.split('v=')[1];
-    if (videoId) {
-      modalImg.style.display = 'none';
-      const iframe = document.createElement('iframe');
-      iframe.src = `https://www.youtube.com/embed/${videoId}`;
-      iframe.width = '560';
-      iframe.height = '250';
-      iframe.frameBorder = '0';
-      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
-      iframe.allowFullscreen = true;
-      modalImg.parentNode.insertBefore(iframe, modalImg.nextSibling);
-      iframe.id = 'modal-video';
-    }
-  }, 100);
 
   localStorage.setItem('lastViewedCourse', JSON.stringify({
     title: course.title,
