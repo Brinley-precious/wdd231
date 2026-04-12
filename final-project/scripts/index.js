@@ -9,8 +9,8 @@ import { fetchStories, buildStoryCard } from './stories-api.js';
 const navButton = document.querySelector('#nav-button');
 const navBar = document.querySelector('#nav-bar');
 navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navBar.classList.toggle('show');
+    navButton.classList.toggle('open');
+    navBar.classList.toggle('open');
 });
 
 // ── Footer ──

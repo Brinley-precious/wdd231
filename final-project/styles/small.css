@@ -133,9 +133,10 @@ header {
 .navigation {
     display: none;
     background-color: var(--secondary);
+    color: var(--text);
 }
 
-.navigation.show {
+.navigation.open {
     display: block;
 }
 
@@ -244,7 +245,7 @@ main {
 }
 
 /* ── BUTTONS ── */
-.btn-primary {
+.button-primary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -262,12 +263,12 @@ main {
     transition: background-color 0.2s, transform 0.2s;
 }
 
-.btn-primary:hover {
+.button-primary:hover {
     background-color: #6d28d9;
     transform: translateY(-2px);
 }
 
-.btn-secondary {
+.button-secondary {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -285,12 +286,12 @@ main {
     transition: all 0.2s;
 }
 
-.btn-secondary:hover {
+.button-secondary:hover {
     background-color: rgba(255, 255, 255, 0.15);
     border-color: var(--accent-2);
 }
 
-.btn-outline {
+.button-outline {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -308,7 +309,7 @@ main {
     transition: all 0.2s;
 }
 
-.btn-outline:hover {
+.button-outline:hover {
     background-color: var(--secondary);
     color: var(--accent-2);
 }
@@ -535,8 +536,8 @@ main {
 
 /* ── STORIES SECTION ── */
 .stories-section {
-    padding: 1rem;
-    background-color: var(--accent-1);
+    padding: 1.5rem;
+    background-color: var(--bg);
 }
 
 .stories-grid {
@@ -1092,4 +1093,20 @@ footer {
 
 .footer-bottom a:hover {
     text-decoration: underline;
+}
+
+/* ── SIMPLE PAGES ── */
+.simple-page {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Inter, sans-serif;
+}
+
+.simple-page-title {
+    font-family: Poppins, sans-serif;
+}
+
+.simple-page-list {
+    line-height: 2;
 }
