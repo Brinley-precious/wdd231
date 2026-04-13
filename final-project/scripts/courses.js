@@ -100,7 +100,8 @@ function closeModal() {
     if (iframe) {
         iframe.remove();
     }
-    document.getElementById('modal-img').style.display = 'block';
+    const modalImg = document.getElementById('modal-img');
+    modalImg.setAttribute('hidden', '');
 }
 
 modalClose.addEventListener('click', closeModal);

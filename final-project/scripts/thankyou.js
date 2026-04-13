@@ -26,16 +26,23 @@ const fields = [
 
 if (params.toString()) {
     summaryBody.innerHTML = fields.map(field => {
-        const value = params.get(field.key);
+        let value = params.get(field.key);
         if (!value) return '';
+
+        // Format the timestamp into a readable date string
+        if (field.key === 'timestamp') {
+            value = new Date(parseInt(value)).toLocaleString();
+        }
+
         return `
       <div class="summary-item">
-        <span class="summary-label">${field.label}</span>
+        <span class="summary-label">${field.label}:</span>
         <span class="summary-value">${value}</span>
       </div>
     `;
     }).join('');
-} else {
+} 
+else {
     summaryBody.innerHTML = `
     <div class="summary-item">
       <span class="summary-value">No data found. Please <a href="index.html">return to the home page</a> and subscribe.</span>

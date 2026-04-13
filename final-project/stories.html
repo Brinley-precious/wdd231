@@ -1,108 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success Stories | Digital Skills Resource Hub</title>
-    <meta name="description"
-        content="Read real success stories from people who transformed their careers through digital skills. Get inspired and start your own journey today.">
-    <meta name="author" content="Brinley Francis">
-    <link rel="icon" href="images/favicon.ico">
-    <meta property="og:title" content="Success Stories | Digital Skills Resource Hub">
-    <meta property="og:description"
-        content="Read inspiring stories from people who transformed their careers through digital skills.">
-    <meta property="og:image" content="https://brinley-precious.github.io/wdd231/final/images/og-image.webp">
-    <meta property="og:url" content="https://brinley-precious.github.io/wdd231/final/stories.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/stories.js" type="module"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success Stories | Digital Skills Resource Hub</title>
+  <meta name="description" content="Read real success stories from people who transformed their careers through digital skills. Get inspired and start your own journey today.">
+  <meta name="author" content="Brinley Francis">
+  <link rel="icon" href="images/favicon.ico">
+  <meta property="og:title" content="Success Stories | Digital Skills Resource Hub">
+  <meta property="og:description" content="Read inspiring stories from people who transformed their careers through digital skills.">
+  <meta property="og:image" content="https://brinley-precious.github.io/wdd231/final-project/images/og-image.webp">
+  <meta property="og:url" content="https://brinley-precious.github.io/wdd231/final-project/stories.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/stories.js" type="module"></script>
 </head>
-
 <body>
 
-    <header>
-        <div class="header-brand">
-            <div class="logo-mark">DSRH</div>
-            <div class="brand-text">
-                <span class="brand-name">Digital Skills Resource Hub</span>
-                <span class="brand-tagline">Empowering the next generation of digital creators.</span>
-            </div>
-        </div>
-        <button id="nav-button" class="hamburger" aria-label="Toggle navigation menu"></button>
-    </header>
+  <header>
+    <div class="header-brand">
+      <div class="logo-mark">DSRH</div>
+      <div class="brand-text">
+        <span class="brand-name">Digital Skills Resource Hub</span>
+        <span class="brand-tagline">Empowering the next generation of digital creators.</span>
+      </div>
+    </div>
+    <button id="nav-button" class="hamburger" aria-label="Toggle navigation menu"></button>
+  </header>
 
-    <nav id="nav-bar" class="navigation">
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li class="current"><a href="stories.html">Stories</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="page-header">
+      <h1>Real People, Real Results</h1>
+      <p>These are stories of ordinary people who took extraordinary steps to learn digital skills and transform their lives. Your story could be next.</p>
+    </div>
+
+    <div class="stories-section">
+      <div id="stories-grid" class="stories-grid">
+        <p class="loading">Loading stories...</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Story Detail Modal -->
+  <dialog id="story-modal">
+    <div class="modal-header">
+      <h2 id="story-modal-name">Name</h2>
+      <button class="modal-close" id="story-modal-close" aria-label="Close modal">&#x2715;</button>
+    </div>
+    <img id="story-modal-img" class="modal-img" src="" alt="" width="560" height="250">
+    <div class="modal-body">
+      <div class="modal-meta" id="story-modal-meta"></div>
+      <p class="modal-description" id="story-modal-description"></p>
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo-mark">DSRH</div>
+        <span class="brand-name">Digital Skills Resource Hub</span>
+        <p>Empowering the next generation of digital creators with free and affordable learning resources.</p>
+      </div>
+      <nav class="footer-nav">
+        <h3>Quick Links</h3>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li class="current"><a href="stories.html">Stories</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="stories.html">Stories</a></li>
+          <li><a href="attributions.html">Attributions</a></li>
         </ul>
-    </nav>
-
-    <main>
-
-        <div class="page-header">
-            <h1>Real People, Real Results</h1>
-            <p>These are stories of ordinary people who took extraordinary steps to learn digital skills and transform
-                their lives. Your story could be next.</p>
-        </div>
-
-        <div class="stories-section">
-            <div id="stories-grid" class="stories-grid">
-                <p class="loading">Loading stories...</p>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Story Detail Modal -->
-    <dialog id="story-modal">
-        <div class="modal-header">
-            <h2 id="story-modal-name">Name</h2>
-            <button class="modal-close" id="story-modal-close" aria-label="Close modal">&#x2715;</button>
-        </div>
-        <img id="story-modal-img" class="modal-img" src="" alt="Story image" width="560" height="250">
-            <div class="modal-meta" id="story-modal-meta"></div>
-            <p class="modal-description" id="story-modal-description"></p>
-        </div>
-    </dialog>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <div class="logo-mark">DSRH</div>
-                <span class="brand-name">Digital Skills Resource Hub</span>
-                <p>Empowering the next generation of digital creators with free and affordable learning resources.</p>
-            </div>
-            <nav class="footer-nav">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="stories.html">Stories</a></li>
-                    <li><a href="attributions.html">Attributions</a></li>
-                </ul>
-            </nav>
-            <div class="footer-contact">
-                <h3>About</h3>
-                <p>Built for WDD 231</p>
-                <p>Brinley Francis</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; <span id="currentyear"></span> Digital Skills Resource Hub &bull; Brinley Francis</p>
-            <p id="lastModified"></p>
-            <p><a href="your_video_url_here" target="_blank">📹 your demo video</a></p>
-        </div>
-    </footer>
+      </nav>
+      <div class="footer-contact">
+        <h3>About</h3>
+        <p>Built for WDD 231</p>
+        <p>Brinley Francis</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentyear"></span> Digital Skills Resource Hub &bull; Brinley Francis</p>
+      <p id="lastModified"></p>
+      <p><a href="https://www.loom.com/share/37ac3c910b9d40dc986256b061d79977" target="_blank">📹 project demo video</a></p>
+    </div>
+  </footer>
 
 </body>
-
 </html>

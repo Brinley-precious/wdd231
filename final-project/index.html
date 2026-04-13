@@ -1,185 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Digital Skills Resource Hub</title>
-    <meta name="description"
-        content="Discover free and affordable digital skills courses in web development, design, data science, and more. Start your tech journey today.">
-    <meta name="author" content="Brinley Francis">
-    <link rel="icon" href="images/favicon.ico">
-    <meta property="og:title" content="Digital Skills Resource Hub">
-    <meta property="og:description"
-        content="Discover free and affordable digital skills courses. Start your tech journey today.">
-    <meta property="og:image" content="https://brinley-precious.github.io/wdd231/final/images/og-image.webp">
-    <meta property="og:url" content="https://brinley-precious.github.io/wdd231/final/index.html">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <script src="scripts/index.js" type="module"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Digital Skills Resource Hub</title>
+  <meta name="description" content="Discover free and affordable digital skills courses in web development, design, data science, and more. Start your tech journey today.">
+  <meta name="author" content="Brinley Francis">
+  <link rel="icon" href="images/favicon.ico">
+  <meta property="og:title" content="Digital Skills Resource Hub | Start Your Tech Journey">
+  <meta property="og:description" content="Discover free and affordable digital skills courses. Start your tech journey today.">
+  <meta property="og:image" content="https://brinley-precious.github.io/wdd231/final-project/images/og-image.webp">
+  <meta property="og:url" content="https://brinley-precious.github.io/wdd231/final-project/index.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/index.js" type="module"></script>
 </head>
-
 <body>
 
-    <header>
-        <div class="header-brand">
-            <div class="logo-mark">DSRH</div>
-            <div class="brand-text">
-                <span class="brand-name">Digital Skills Resource Hub</span>
-                <span class="brand-tagline">Empowering the next generation of digital creators.</span>
-            </div>
-        </div>
-        <button id="nav-button" class="hamburger" aria-label="Toggle navigation menu"></button>
-    </header>
+  <header>
+    <div class="header-brand">
+      <div class="logo-mark">DSRH</div>
+      <div class="brand-text">
+        <span class="brand-name">Digital Skills Resource Hub</span>
+        <span class="brand-tagline">Empowering the next generation of digital creators.</span>
+      </div>
+    </div>
+    <button id="nav-button" class="hamburger" aria-label="Toggle navigation menu"></button>
+  </header>
 
-    <nav id="nav-bar" class="navigation">
+  <nav id="nav-bar" class="navigation">
+    <ul>
+      <li class="current"><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="stories.html">Stories</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-badge">Free &amp; Affordable Courses</span>
+        <h1>Build Your <span>Digital Future</span> Today</h1>
+        <p>Discover curated courses in web development, design, data science, and more. Whether you are a complete beginner or switching careers, we have got you covered.</p>
+        <div class="hero-actions">
+          <a href="courses.html" class="button-primary">Explore Courses</a>
+          <a href="stories.html" class="button-secondary">Read Success Stories</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="stats-bar">
+      <div class="stat-item">
+        <span class="stat-number">30+</span>
+        <span class="stat-label">Courses</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">11</span>
+        <span class="stat-label">Categories</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Free to Browse</span>
+      </div>
+    </div>
+
+    <section class="featured-courses">
+      <div class="section-header">
+        <h2>Featured <span>Courses</span></h2>
+        <p>Hand-picked courses from top YouTube educators across the most in-demand digital skills.</p>
+      </div>
+      <div id="featured-grid" class="courses-grid">
+        <p class="loading">Loading featured courses...</p>
+      </div>
+      <div class="view-all-wrap">
+        <a href="courses.html" class="button-outline">View All Courses</a>
+      </div>
+    </section>
+
+    <section class="stories-section">
+      <div class="section-header">
+        <h2>Real <span>Success Stories</span></h2>
+        <p>People just like you who took the leap and transformed their careers through digital skills.</p>
+      </div>
+      <div id="stories-preview" class="stories-grid">
+        <p class="loading">Loading stories...</p>
+      </div>
+      <div class="view-all-wrap">
+        <a href="stories.html" class="button-outline">Read All Stories</a>
+      </div>
+    </section>
+
+    <section class="newsletter-section">
+      <h2>Stay in the Loop</h2>
+      <p>Get the latest courses, resources, and success stories delivered to your inbox every week.</p>
+      <form class="newsletter-form" method="get" action="thankyou.html" id="newsletter-form">
+        <label for="name" class="sr-only">Your full name</label>
+        <input type="text" name="name" id="name" placeholder="Your full name" title="Enter your full name" autocomplete="name" required>
+        <label for="email" class="sr-only">Your email address</label>
+        <input type="email" name="email" id="email" placeholder="your@email.com" title="Enter your email address" autocomplete="email" required>
+        <input type="hidden" name="timestamp" id="timestamp">
+        <input type="submit" value="Subscribe Now">
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Course Detail Modal -->
+  <dialog id="course-modal">
+    <div class="modal-header">
+      <h2 id="modal-title">Course Title</h2>
+      <button class="modal-close" id="modal-close" aria-label="Close modal">&#x2715;</button>
+    </div>
+    <img id="modal-img" class="modal-img" src="" alt="" width="560" height="250">
+    <div class="modal-body">
+      <div class="modal-meta" id="modal-meta"></div>
+      <p class="modal-description" id="modal-description"></p>
+      <div class="modal-actions">
+        <a id="modal-link" class="modal-link" href="#" target="_blank" rel="noopener noreferrer">Watch on YouTube &#8594;</a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Story Detail Modal -->
+  <dialog id="story-modal">
+    <div class="modal-header">
+      <h2 id="story-modal-name">Story Title</h2>
+      <button class="modal-close" id="story-modal-close" aria-label="Close modal">&#x2715;</button>
+    </div>
+    <img id="story-modal-img" class="modal-img" src="" alt="" width="560" height="250">
+    <div class="modal-body">
+      <div class="modal-meta" id="story-modal-meta"></div>
+      <p class="modal-description" id="story-modal-description"></p>
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo-mark">DSRH</div>
+        <span class="brand-name">Digital Skills Resource Hub</span>
+        <p>Empowering the next generation of digital creators with free and affordable learning resources.</p>
+      </div>
+      <nav class="footer-nav">
+        <h3>Quick Links</h3>
         <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="stories.html">Stories</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="stories.html">Stories</a></li>
+          <li><a href="attributions.html">Attributions</a></li>
         </ul>
-    </nav>
-
-    <main>
-
-        <section class="hero">
-            <div class="hero-content">
-                <span class="hero-badge">Free &amp; Affordable Courses</span>
-                <h1>Build Your <span>Digital Future</span> Today</h1>
-                <p>Discover curated courses in web development, design, data science, and more. Whether you are a
-                    complete beginner or switching careers, we have got you covered.</p>
-                <div class="hero-actions">
-                    <a href="courses.html" class="button-primary">Explore Courses</a>
-                    <a href="stories.html" class="button-secondary">Read Success Stories</a>
-                </div>
-            </div>
-        </section>
-
-        <div class="stats-bar">
-            <div class="stat-item">
-                <span class="stat-number">30+</span>
-                <span class="stat-label">Courses</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">11</span>
-                <span class="stat-label">Categories</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">100%</span>
-                <span class="stat-label">Free to Browse</span>
-            </div>
-        </div>
-
-        <section class="featured-courses">
-            <div class="section-header">
-                <h2>Featured <span>Courses</span></h2>
-                <p>Hand-picked courses from top YouTube educators across the most in-demand digital skills.</p>
-            </div>
-            <div id="featured-grid" class="courses-grid">
-                <p class="loading">Loading featured courses...</p>
-            </div>
-            <div class="view-all-wrap">
-                <a href="courses.html" class="button-outline">View All Courses</a>
-            </div>
-        </section>
-
-        <section class="stories-section">
-            <div class="section-header">
-                <h2>Real <span>Success Stories</span></h2>
-                <p>People just like you who took the leap and transformed their careers through digital skills.</p>
-            </div>
-            <div id="stories-preview" class="stories-grid">
-                <p class="loading">Loading stories...</p>
-            </div>
-            <div class="view-all-wrap">
-                <a href="stories.html" class="button-outline">Read All Stories</a>
-            </div>
-        </section>
-
-        <!-- Course Detail Modal -->
-        <dialog id="course-modal">
-            <div class="modal-header">
-                <h2 id="modal-title">Course Title</h2>
-                <button class="modal-close" id="modal-close" aria-label="Close modal">&#x2715;</button>
-            </div>
-            <img id="modal-img" class="modal-img"
-                src="data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='560' height='250'><rect width='100%' height='100%' fill='%23e2e8f0'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%237c3aed' font-family='Inter, sans-serif' font-size='16'>Course image</text></svg>"
-                alt="Course image" width="560" height="250" loading="lazy">
-            <div class="modal-body">
-                <div class="modal-meta" id="modal-meta"></div>
-                <p class="modal-description" id="modal-description"></p>
-                <div class="modal-actions">
-                    <a id="modal-link" class="modal-link" href="#" target="_blank" rel="noopener noreferrer">Watch on
-                        YouTube &#8594;</a>
-                </div>
-            </div>
-        </dialog>
-
-        <!-- Story Detail Modal -->
-        <dialog id="story-modal">
-            <div class="modal-header">
-                <h2 id="story-modal-name">Story Title</h2>
-                <button class="modal-close" id="story-modal-close" aria-label="Close modal">&#x2715;</button>
-            </div>
-            <img id="modal-img" class="modal-img" src="" alt="Course image" width="560" height="250">
-            <div class="modal-body">
-                <div class="modal-meta" id="story-modal-meta"></div>
-                <p class="modal-description" id="story-modal-description"></p>
-            </div>
-        </dialog>
-
-        <section class="newsletter-section">
-            <h2>Stay in the Loop</h2>
-            <p>Get the latest courses, resources, and success stories delivered to your inbox every week.</p>
-            <form class="newsletter-form" method="get" action="thankyou.html" id="newsletter-form">
-                <label for="name" class="sr-only">Your full name</label>
-                <input type="text" name="name" id="name" placeholder="Your full name" title="Enter your full name"
-                    autocomplete="name" required>
-                <label for="email" class="sr-only">Your email address</label>
-                <input type="email" name="email" id="email" placeholder="your@email.com"
-                    title="Enter your email address" autocomplete="email" required>
-                <input type="hidden" name="timestamp" id="timestamp">
-                <input type="submit" value="Subscribe Now">
-            </form>
-        </section>
-
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <div class="logo-mark">DSRH</div>
-                <span class="brand-name">Digital Skills Resource Hub</span>
-                <p>Empowering the next generation of digital creators with free and affordable learning resources.</p>
-            </div>
-            <nav class="footer-nav">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="stories.html">Stories</a></li>
-                    <li><a href="attributions.html">Attributions</a></li>
-                </ul>
-            </nav>
-            <div class="footer-contact">
-                <h3>About</h3>
-                <p>Built for WDD 231</p>
-                <p>Brinley Francis</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; <span id="currentyear"></span> Digital Skills Resource Hub &bull; Brinley Francis</p>
-            <p id="lastModified"></p>
-            <p><a href="your_video_url_here" id="video-link" target="_blank">📹 your demo video</a></p>
-        </div>
-    </footer>
+      </nav>
+      <div class="footer-contact">
+        <h3>About</h3>
+        <p>Built for WDD 231</p>
+        <p>Brinley Francis</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="currentyear"></span> Digital Skills Resource Hub &bull; Brinley Francis</p>
+      <p id="lastModified"></p>
+      <p><a href="https://www.loom.com/share/37ac3c910b9d40dc986256b061d79977" id="video-link" target="_blank">📹 project demo video</a></p>
+    </div>
+  </footer>
 
 </body>
-
 </html>

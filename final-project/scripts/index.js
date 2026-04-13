@@ -18,7 +18,9 @@ document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
 
 // ── Timestamp for form ──
-document.getElementById('timestamp').value = new Date().toLocaleString();
+document.querySelector('#newsletter-form')?.addEventListener('submit', () => {
+    document.querySelector('#timestamp').value = Date.now();
+});
 
 // ── Load featured courses (Web Dev, first 6) ──
 const featuredGrid = document.getElementById('featured-grid');
